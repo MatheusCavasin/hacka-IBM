@@ -8,25 +8,88 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Sell View Controller-->
         <scene sceneID="UD5-4D-S7G">
             <objects>
-                <viewController storyboardIdentifier="TabSell" id="Zme-GO-r5I" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TabSell" id="Zme-GO-r5I" customClass="SellViewController" customModule="hackaApp_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UcJ-D8-nx0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kUS-7F-DZf">
+                                <rect key="frame" x="112.5" y="155" width="189" height="189"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="189" id="0h9-dg-aRv"/>
+                                    <constraint firstAttribute="width" constant="189" id="IGs-HC-Ixd"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Título anúncio" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FMd-jo-QWC">
+                                <rect key="frame" x="40" y="434" width="119" height="34"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Quantidade" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3h2-49-9jK">
+                                <rect key="frame" x="40" y="499" width="90" height="34"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="qgi-fZ-vz0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Preço" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0cA-BL-YQw">
+                                <rect key="frame" x="40" y="564" width="90" height="34"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="ich-2B-gBg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dKg-CM-STm">
+                                <rect key="frame" x="125.5" y="678" width="163" height="42"/>
+                                <color key="backgroundColor" red="0.31182864310000002" green="0.31188797950000002" blue="0.3118248582" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="5Uk-oI-zSc"/>
+                                    <constraint firstAttribute="width" constant="163" id="Nyg-9U-bC6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Publicar"/>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="zH2-Ob-xNi"/>
-                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dKg-CM-STm" firstAttribute="top" secondItem="0cA-BL-YQw" secondAttribute="bottom" constant="80" id="8zM-bJ-hzS"/>
+                            <constraint firstItem="0cA-BL-YQw" firstAttribute="top" secondItem="3h2-49-9jK" secondAttribute="bottom" constant="31" id="C0y-OH-kN2"/>
+                            <constraint firstItem="FMd-jo-QWC" firstAttribute="leading" secondItem="zH2-Ob-xNi" secondAttribute="leading" constant="40" id="F61-5B-z6b"/>
+                            <constraint firstItem="dKg-CM-STm" firstAttribute="centerX" secondItem="zH2-Ob-xNi" secondAttribute="centerX" id="ISz-VN-yZ2"/>
+                            <constraint firstItem="kUS-7F-DZf" firstAttribute="centerX" secondItem="zH2-Ob-xNi" secondAttribute="centerX" id="Nyj-9d-DIe"/>
+                            <constraint firstItem="kUS-7F-DZf" firstAttribute="top" secondItem="zH2-Ob-xNi" secondAttribute="top" constant="111" id="WQm-84-ElY"/>
+                            <constraint firstItem="0cA-BL-YQw" firstAttribute="leading" secondItem="3h2-49-9jK" secondAttribute="leading" id="h3F-5I-Gkc"/>
+                            <constraint firstItem="3h2-49-9jK" firstAttribute="leading" secondItem="FMd-jo-QWC" secondAttribute="leading" id="jbj-RE-XsT"/>
+                            <constraint firstItem="3h2-49-9jK" firstAttribute="top" secondItem="FMd-jo-QWC" secondAttribute="bottom" constant="31" id="lup-Wp-2Rp"/>
+                            <constraint firstItem="FMd-jo-QWC" firstAttribute="top" secondItem="kUS-7F-DZf" secondAttribute="bottom" constant="90" id="ouD-DQ-efu"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imgView" destination="kUS-7F-DZf" id="8wC-nG-H86"/>
+                        <outlet property="publishButton" destination="dKg-CM-STm" id="6xR-4X-ejs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iXe-3f-wJs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="201" y="76"/>
+            <point key="canvasLocation" x="200.00000000000003" y="75.669642857142847"/>
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemYellowColor">
-            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

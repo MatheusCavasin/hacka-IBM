@@ -12,6 +12,8 @@
 		885BA9FA26AC980D00A5A63D /* Journey.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 885BA9F926AC980D00A5A63D /* Journey.storyboard */; };
 		885BA9FD26AC988700A5A63D /* Buy.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 885BA9FC26AC988700A5A63D /* Buy.storyboard */; };
 		885BAA0026AC989000A5A63D /* Sell.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 885BA9FF26AC989000A5A63D /* Sell.storyboard */; };
+		885BAA0426ACB64A00A5A63D /* SellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885BAA0326ACB64A00A5A63D /* SellViewController.swift */; };
+		885BAA0826ACB9B400A5A63D /* ButtonConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885BAA0726ACB9B400A5A63D /* ButtonConfig.swift */; };
 		8890BF2026AC336F003BC0D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8890BF1F26AC336F003BC0D3 /* AppDelegate.swift */; };
 		8890BF2226AC336F003BC0D3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8890BF2126AC336F003BC0D3 /* SceneDelegate.swift */; };
 		8890BF2426AC336F003BC0D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8890BF2326AC336F003BC0D3 /* ViewController.swift */; };
@@ -29,6 +31,8 @@
 		885BA9F926AC980D00A5A63D /* Journey.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Journey.storyboard; sourceTree = "<group>"; };
 		885BA9FC26AC988700A5A63D /* Buy.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Buy.storyboard; sourceTree = "<group>"; };
 		885BA9FF26AC989000A5A63D /* Sell.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Sell.storyboard; sourceTree = "<group>"; };
+		885BAA0326ACB64A00A5A63D /* SellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellViewController.swift; sourceTree = "<group>"; };
+		885BAA0726ACB9B400A5A63D /* ButtonConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonConfig.swift; sourceTree = "<group>"; };
 		8890BF1C26AC336F003BC0D3 /* hackaApp-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "hackaApp-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8890BF1F26AC336F003BC0D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8890BF2126AC336F003BC0D3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,9 +63,18 @@
 		885BA9F126AC85B100A5A63D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				885BAA0226ACB62C00A5A63D /* Sell Controllers */,
 				885BA9F526AC977500A5A63D /* MainViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		885BAA0226ACB62C00A5A63D /* Sell Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				885BAA0326ACB64A00A5A63D /* SellViewController.swift */,
+			);
+			path = "Sell Controllers";
 			sourceTree = "<group>";
 		};
 		8890BF1326AC336F003BC0D3 = {
@@ -112,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				8890BF3F26AC62C0003BC0D3 /* Singleton.swift */,
+				885BAA0726ACB9B400A5A63D /* ButtonConfig.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -253,11 +267,13 @@
 			files = (
 				885BA9F626AC977500A5A63D /* MainViewController.swift in Sources */,
 				8890BF2426AC336F003BC0D3 /* ViewController.swift in Sources */,
+				885BAA0426ACB64A00A5A63D /* SellViewController.swift in Sources */,
 				8890BF4026AC62C0003BC0D3 /* Singleton.swift in Sources */,
 				8890BF2026AC336F003BC0D3 /* AppDelegate.swift in Sources */,
 				8890BF4426AC7AAF003BC0D3 /* ApiResource.swift in Sources */,
 				8890BF4826AC7FAD003BC0D3 /* JourneyRepository.swift in Sources */,
 				8890BF2226AC336F003BC0D3 /* SceneDelegate.swift in Sources */,
+				885BAA0826ACB9B400A5A63D /* ButtonConfig.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
