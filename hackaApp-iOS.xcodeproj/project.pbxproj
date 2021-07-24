@@ -13,6 +13,7 @@
 		8890BF2726AC336F003BC0D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8890BF2526AC336F003BC0D3 /* Main.storyboard */; };
 		8890BF2926AC3373003BC0D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8890BF2826AC3373003BC0D3 /* Assets.xcassets */; };
 		8890BF2C26AC3373003BC0D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8890BF2A26AC3373003BC0D3 /* LaunchScreen.storyboard */; };
+		8890BF3A26AC3A89003BC0D3 /* PrincipalComprador.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8890BF3926AC3A89003BC0D3 /* PrincipalComprador.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		8890BF2826AC3373003BC0D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8890BF2B26AC3373003BC0D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8890BF2D26AC3373003BC0D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8890BF3926AC3A89003BC0D3 /* PrincipalComprador.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PrincipalComprador.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,10 @@
 		8890BF1E26AC336F003BC0D3 /* hackaApp-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				8890BF3626AC3850003BC0D3 /* Model */,
+				8890BF3526AC37D2003BC0D3 /* Repository */,
+				8890BF3726AC385B003BC0D3 /* Controler */,
+				8890BF3826AC3910003BC0D3 /* Storyboards */,
 				8890BF1F26AC336F003BC0D3 /* AppDelegate.swift */,
 				8890BF2126AC336F003BC0D3 /* SceneDelegate.swift */,
 				8890BF2326AC336F003BC0D3 /* ViewController.swift */,
@@ -65,6 +71,35 @@
 				8890BF2D26AC3373003BC0D3 /* Info.plist */,
 			);
 			path = "hackaApp-iOS";
+			sourceTree = "<group>";
+		};
+		8890BF3526AC37D2003BC0D3 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		8890BF3626AC3850003BC0D3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8890BF3726AC385B003BC0D3 /* Controler */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controler;
+			sourceTree = "<group>";
+		};
+		8890BF3826AC3910003BC0D3 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				8890BF3926AC3A89003BC0D3 /* PrincipalComprador.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8890BF2C26AC3373003BC0D3 /* LaunchScreen.storyboard in Resources */,
+				8890BF3A26AC3A89003BC0D3 /* PrincipalComprador.storyboard in Resources */,
 				8890BF2926AC3373003BC0D3 /* Assets.xcassets in Resources */,
 				8890BF2726AC336F003BC0D3 /* Main.storyboard in Resources */,
 			);
@@ -293,10 +329,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "br.com.hackaApp-iOS.hackaApp-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.hackaApp-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -312,10 +348,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "br.com.hackaApp-iOS.hackaApp-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.hackaApp-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
