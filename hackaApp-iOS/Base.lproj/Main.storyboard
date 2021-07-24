@@ -22,7 +22,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Comprar"/>
                                 <connections>
-                                    <segue destination="AiX-Vm-irq" kind="presentation" modalPresentationStyle="fullScreen" id="xPc-e1-cz2"/>
+                                    <action selector="teste:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wtO-lH-SFr"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -33,16 +33,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="112" y="94"/>
-        </scene>
-        <!--PrincipalComprador-->
-        <scene sceneID="qdg-fE-YJA">
-            <objects>
-                <viewControllerPlaceholder storyboardName="PrincipalComprador" id="AiX-Vm-irq" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="hSZ-DD-w2g"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="KE4-4b-f5F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="920" y="77"/>
         </scene>
     </scenes>
     <resources>
