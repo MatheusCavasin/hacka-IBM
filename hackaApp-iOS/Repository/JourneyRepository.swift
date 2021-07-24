@@ -14,8 +14,8 @@ class JourneyRepository {
         
         ApiResource.request(method: "GET", url: url, params: nil, body: nil, withAuth: false) { (result, err) in
             if result != nil {
-                let dictResult = result as! [Dictionary<String, Any>]
-                
+                let dictResult = result as! Dictionary<String, Any>
+                print(dictResult)
                 DispatchQueue.main.async {
                     NotificationCenter.default.post(name: Notification.Name(rawValue: "AnucniosCarregados"), object: nil)
                 }
@@ -30,3 +30,7 @@ class JourneyRepository {
     }
     
 }
+
+// exemplo para pegar os dados JSON
+// var a = dictResult["questions"] as! [[String : Any?]]
+// print(a[0]["title"])

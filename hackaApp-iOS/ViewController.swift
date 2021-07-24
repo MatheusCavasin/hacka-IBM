@@ -12,13 +12,13 @@ class ViewController: UIViewController {
     let journeyRepository = JourneyRepository()
     override func viewDidLoad() {
         super.viewDidLoad()
+        journeyRepository.getQuestions()
         // Do any additional setup after loading the view.
     }
+    
 
-    @IBAction func teste(_ sender: Any) {
-        
-        journeyRepository.getQuestions()
-    }
+
+    
     
 }
 
