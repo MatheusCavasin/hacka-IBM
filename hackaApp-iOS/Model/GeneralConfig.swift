@@ -8,7 +8,8 @@
 import Foundation
 import UIKit
 
-class ButtonConfig {
+class GeneralConfig {
     
+    // buttons
     static let cornerRadius = CGFloat(5)
 }

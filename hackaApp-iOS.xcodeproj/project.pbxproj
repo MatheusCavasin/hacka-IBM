@@ -13,7 +13,7 @@
 		885BA9FD26AC988700A5A63D /* Buy.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 885BA9FC26AC988700A5A63D /* Buy.storyboard */; };
 		885BAA0026AC989000A5A63D /* Sell.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 885BA9FF26AC989000A5A63D /* Sell.storyboard */; };
 		885BAA0426ACB64A00A5A63D /* SellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885BAA0326ACB64A00A5A63D /* SellViewController.swift */; };
-		885BAA0826ACB9B400A5A63D /* ButtonConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885BAA0726ACB9B400A5A63D /* ButtonConfig.swift */; };
+		885BAA0826ACB9B400A5A63D /* GeneralConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885BAA0726ACB9B400A5A63D /* GeneralConfig.swift */; };
 		8890BF2026AC336F003BC0D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8890BF1F26AC336F003BC0D3 /* AppDelegate.swift */; };
 		8890BF2226AC336F003BC0D3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8890BF2126AC336F003BC0D3 /* SceneDelegate.swift */; };
 		8890BF2426AC336F003BC0D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8890BF2326AC336F003BC0D3 /* ViewController.swift */; };
@@ -23,6 +23,12 @@
 		8890BF4026AC62C0003BC0D3 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8890BF3F26AC62C0003BC0D3 /* Singleton.swift */; };
 		8890BF4426AC7AAF003BC0D3 /* ApiResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8890BF4326AC7AAF003BC0D3 /* ApiResource.swift */; };
 		8890BF4826AC7FAD003BC0D3 /* JourneyRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8890BF4726AC7FAD003BC0D3 /* JourneyRepository.swift */; };
+		88AC8A2C26ACCA6D001A4C82 /* BuyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88AC8A2B26ACCA6D001A4C82 /* BuyViewController.swift */; };
+		88AC8A3226ACD7CB001A4C82 /* JourneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88AC8A3126ACD7CA001A4C82 /* JourneyViewController.swift */; };
+		88AC8A3726ACDB84001A4C82 /* ProblemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88AC8A3526ACDB84001A4C82 /* ProblemTableViewCell.swift */; };
+		88AC8A3826ACDB84001A4C82 /* ProblemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88AC8A3626ACDB84001A4C82 /* ProblemTableViewCell.xib */; };
+		88AC8A3D26ACDE4C001A4C82 /* Nunito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 88AC8A3B26ACDE4B001A4C82 /* Nunito-Regular.ttf */; };
+		88AC8A3E26ACDE4C001A4C82 /* Nunito-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 88AC8A3C26ACDE4B001A4C82 /* Nunito-Bold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,7 +38,7 @@
 		885BA9FC26AC988700A5A63D /* Buy.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Buy.storyboard; sourceTree = "<group>"; };
 		885BA9FF26AC989000A5A63D /* Sell.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Sell.storyboard; sourceTree = "<group>"; };
 		885BAA0326ACB64A00A5A63D /* SellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellViewController.swift; sourceTree = "<group>"; };
-		885BAA0726ACB9B400A5A63D /* ButtonConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonConfig.swift; sourceTree = "<group>"; };
+		885BAA0726ACB9B400A5A63D /* GeneralConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralConfig.swift; sourceTree = "<group>"; };
 		8890BF1C26AC336F003BC0D3 /* hackaApp-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "hackaApp-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8890BF1F26AC336F003BC0D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8890BF2126AC336F003BC0D3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -44,6 +50,12 @@
 		8890BF3F26AC62C0003BC0D3 /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
 		8890BF4326AC7AAF003BC0D3 /* ApiResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResource.swift; sourceTree = "<group>"; };
 		8890BF4726AC7FAD003BC0D3 /* JourneyRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyRepository.swift; sourceTree = "<group>"; };
+		88AC8A2B26ACCA6D001A4C82 /* BuyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyViewController.swift; sourceTree = "<group>"; };
+		88AC8A3126ACD7CA001A4C82 /* JourneyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyViewController.swift; sourceTree = "<group>"; };
+		88AC8A3526ACDB84001A4C82 /* ProblemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProblemTableViewCell.swift; sourceTree = "<group>"; };
+		88AC8A3626ACDB84001A4C82 /* ProblemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProblemTableViewCell.xib; sourceTree = "<group>"; };
+		88AC8A3B26ACDE4B001A4C82 /* Nunito-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Regular.ttf"; sourceTree = "<group>"; };
+		88AC8A3C26ACDE4B001A4C82 /* Nunito-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Bold.ttf"; sourceTree = "<group>"; };
 		D7B6CBE0C9CA10104F514AD5 /* Pods-hackaApp-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hackaApp-iOS.release.xcconfig"; path = "Target Support Files/Pods-hackaApp-iOS/Pods-hackaApp-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		E87369A61E5A29B19D56B6DB /* Pods_hackaApp_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hackaApp_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -63,6 +75,8 @@
 		885BA9F126AC85B100A5A63D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				88AC8A2F26ACD74B001A4C82 /* Journey Controllers */,
+				88AC8A2A26ACCA43001A4C82 /* Buy Controllers */,
 				885BAA0226ACB62C00A5A63D /* Sell Controllers */,
 				885BA9F526AC977500A5A63D /* MainViewController.swift */,
 			);
@@ -84,6 +98,7 @@
 				8890BF1D26AC336F003BC0D3 /* Products */,
 				AF7F646AF9A2DD2BD9D4FF03 /* Pods */,
 				F4751C37D7360BB51164D094 /* Frameworks */,
+				88AC8A3A26ACDE1B001A4C82 /* Fonts */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,7 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				8890BF3F26AC62C0003BC0D3 /* Singleton.swift */,
-				885BAA0726ACB9B400A5A63D /* ButtonConfig.swift */,
+				885BAA0726ACB9B400A5A63D /* GeneralConfig.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -147,6 +162,41 @@
 				8890BF4326AC7AAF003BC0D3 /* ApiResource.swift */,
 			);
 			path = Resource;
+			sourceTree = "<group>";
+		};
+		88AC8A2A26ACCA43001A4C82 /* Buy Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				88AC8A2B26ACCA6D001A4C82 /* BuyViewController.swift */,
+			);
+			path = "Buy Controllers";
+			sourceTree = "<group>";
+		};
+		88AC8A2F26ACD74B001A4C82 /* Journey Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				88AC8A3426ACDB0E001A4C82 /* Table cells */,
+				88AC8A3126ACD7CA001A4C82 /* JourneyViewController.swift */,
+			);
+			path = "Journey Controllers";
+			sourceTree = "<group>";
+		};
+		88AC8A3426ACDB0E001A4C82 /* Table cells */ = {
+			isa = PBXGroup;
+			children = (
+				88AC8A3526ACDB84001A4C82 /* ProblemTableViewCell.swift */,
+				88AC8A3626ACDB84001A4C82 /* ProblemTableViewCell.xib */,
+			);
+			path = "Table cells";
+			sourceTree = "<group>";
+		};
+		88AC8A3A26ACDE1B001A4C82 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				88AC8A3C26ACDE4B001A4C82 /* Nunito-Bold.ttf */,
+				88AC8A3B26ACDE4B001A4C82 /* Nunito-Regular.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		AF7F646AF9A2DD2BD9D4FF03 /* Pods */ = {
@@ -224,8 +274,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88AC8A3826ACDB84001A4C82 /* ProblemTableViewCell.xib in Resources */,
 				8890BF2C26AC3373003BC0D3 /* LaunchScreen.storyboard in Resources */,
+				88AC8A3D26ACDE4C001A4C82 /* Nunito-Regular.ttf in Resources */,
 				885BA9FA26AC980D00A5A63D /* Journey.storyboard in Resources */,
+				88AC8A3E26ACDE4C001A4C82 /* Nunito-Bold.ttf in Resources */,
 				885BAA0026AC989000A5A63D /* Sell.storyboard in Resources */,
 				8890BF2926AC3373003BC0D3 /* Assets.xcassets in Resources */,
 				8890BF2726AC336F003BC0D3 /* Main.storyboard in Resources */,
@@ -266,6 +319,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				885BA9F626AC977500A5A63D /* MainViewController.swift in Sources */,
+				88AC8A3726ACDB84001A4C82 /* ProblemTableViewCell.swift in Sources */,
+				88AC8A2C26ACCA6D001A4C82 /* BuyViewController.swift in Sources */,
 				8890BF2426AC336F003BC0D3 /* ViewController.swift in Sources */,
 				885BAA0426ACB64A00A5A63D /* SellViewController.swift in Sources */,
 				8890BF4026AC62C0003BC0D3 /* Singleton.swift in Sources */,
@@ -273,7 +328,8 @@
 				8890BF4426AC7AAF003BC0D3 /* ApiResource.swift in Sources */,
 				8890BF4826AC7FAD003BC0D3 /* JourneyRepository.swift in Sources */,
 				8890BF2226AC336F003BC0D3 /* SceneDelegate.swift in Sources */,
-				885BAA0826ACB9B400A5A63D /* ButtonConfig.swift in Sources */,
+				88AC8A3226ACD7CB001A4C82 /* JourneyViewController.swift in Sources */,
+				885BAA0826ACB9B400A5A63D /* GeneralConfig.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

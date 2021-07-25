@@ -17,8 +17,11 @@ class SellViewController: UIViewController, UINavigationControllerDelegate, UIIm
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let tap = UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
         
-        publishButton.layer.cornerRadius = ButtonConfig.cornerRadius
+        publishButton.layer.cornerRadius = GeneralConfig.cornerRadius
         imgView.image = UIImage(named: "imgDefault")
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTap(tapGestureRecognizer:)))
         imgView.isUserInteractionEnabled = true
