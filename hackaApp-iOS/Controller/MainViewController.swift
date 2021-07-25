@@ -36,10 +36,18 @@ class MainViewController: UITabBarController {
         
         viewControllers = [firstBookTableVc, secondBookTableVc, thirdBookTableVc]
         
-//        tabBar.items?[0].image = UIImage(named: "aaaa")
-//        tabBar.items?[1].image = UIImage(systemName: "aaaaa")
-//        tabBar.items?[2].image = UIImage(named: "aaaaa")
+        tabBar.items?[0].image = UIImage(named: "journeyTab")
+        tabBar.items?[1].image = UIImage(named: "storeTab")
+        tabBar.items?[2].image = UIImage(named: "sellTab")
         
+        tabBar.items?[0].selectedImage = UIImage(named: "journeyTabSelected")
+        tabBar.items?[1].selectedImage = UIImage(named: "storeTabSelected")
+        tabBar.items?[2].selectedImage = UIImage(named: "sellTabSelected")
+        
+        tabBar.items?[0].standardAppearance?.selectionIndicatorTintColor = UIColor(cgColor: #colorLiteral(red: 0.3118286431, green: 0.3118879795, blue: 0.3118248582, alpha: 1))
+//        tabBar.items?[1].title = "Buy"
+//        tabBar.items?[2].title = "Sell"
+//
         tabBar.items?[0].title = "Journey"
         tabBar.items?[1].title = "Buy"
         tabBar.items?[2].title = "Sell"

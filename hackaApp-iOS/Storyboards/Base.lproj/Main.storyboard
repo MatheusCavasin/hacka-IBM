@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bz6-R0-Rh6">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bz6-R0-Rh6">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -58,7 +58,7 @@
         <scene sceneID="GaL-Ep-mZn">
             <objects>
                 <viewControllerPlaceholder storyboardName="Journey" id="FxC-LP-wUG" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="m4b-Bd-HXK"/>
+                    <tabBarItem key="tabBarItem" title="Item" selectedImage="journeyTab" id="m4b-Bd-HXK"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="elU-WB-2Hc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -68,7 +68,7 @@
         <scene sceneID="hdX-WP-yvc">
             <objects>
                 <viewControllerPlaceholder storyboardName="Buy" id="n1T-0K-jRP" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="v3t-ue-ln1"/>
+                    <tabBarItem key="tabBarItem" title="Item" selectedImage="storeTab" id="v3t-ue-ln1"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g7S-PE-q3J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -78,7 +78,7 @@
         <scene sceneID="jlM-nC-8LZ">
             <objects>
                 <viewControllerPlaceholder storyboardName="Sell" id="2aK-Qi-eqN" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="EaN-5v-SHz"/>
+                    <tabBarItem key="tabBarItem" title="Item" selectedImage="sellTab" id="EaN-5v-SHz"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aGA-dF-kmb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -86,6 +86,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="journeyTab" width="20" height="20"/>
+        <image name="sellTab" width="20" height="20.5"/>
+        <image name="storeTab" width="20.5" height="20"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

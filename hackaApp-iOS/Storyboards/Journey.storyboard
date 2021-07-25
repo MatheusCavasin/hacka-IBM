@@ -1,24 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MOh-A2-mxX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MOh-A2-mxX">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Nunito-Bold.ttf">
+            <string>Nunito-Bold</string>
+        </array>
+        <array key="Nunito-Regular.ttf">
+            <string>Nunito-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Journey View Controller-->
         <scene sceneID="WRe-94-2m6">
             <objects>
-                <viewController storyboardIdentifier="TabJourney" id="ySj-H1-UcR" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TabJourney" id="ySj-H1-UcR" customClass="JourneyViewController" customModule="hackaApp_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HCg-92-l9Y">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Como vamos salvar o mundo hoje?" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gl5-xc-0vF">
+                                <rect key="frame" x="102" y="154.5" width="252" height="95"/>
+                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="19"/>
+                                <color key="textColor" red="0.090196078430000007" green="0.2470588235" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="globoHome" translatesAutoresizingMaskIntoConstraints="NO" id="lNQ-jl-dXa">
+                                <rect key="frame" x="38" y="175" width="54" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="54" id="DtO-u1-xVq"/>
+                                    <constraint firstAttribute="height" constant="54" id="iYh-PM-Akx"/>
+                                </constraints>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="GFr-SZ-1fL">
+                                <rect key="frame" x="32" y="324" width="350" height="538"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selecione o que você quer diminuir no meio ambiente hoje:" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ucc-KJ-Q8O">
+                                <rect key="frame" x="32" y="259" width="350" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="eIe-Vd-IN1"/>
+                                    <constraint firstAttribute="width" constant="350" id="fiy-EK-PtR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="16"/>
+                                <color key="textColor" red="0.090196078430000007" green="0.2470588235" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="TO2-Fx-yW7"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ucc-KJ-Q8O" firstAttribute="centerX" secondItem="TO2-Fx-yW7" secondAttribute="centerX" id="P1Q-Dp-VSr"/>
+                            <constraint firstItem="GFr-SZ-1fL" firstAttribute="width" secondItem="Ucc-KJ-Q8O" secondAttribute="width" id="YDm-4P-hxG"/>
+                            <constraint firstItem="GFr-SZ-1fL" firstAttribute="centerX" secondItem="TO2-Fx-yW7" secondAttribute="centerX" id="bFm-d2-fxk"/>
+                            <constraint firstItem="GFr-SZ-1fL" firstAttribute="top" secondItem="Ucc-KJ-Q8O" secondAttribute="bottom" constant="20" id="dss-0o-0WC"/>
+                            <constraint firstItem="Ucc-KJ-Q8O" firstAttribute="top" secondItem="lNQ-jl-dXa" secondAttribute="bottom" constant="30" id="e0o-eW-QAo"/>
+                            <constraint firstItem="gl5-xc-0vF" firstAttribute="height" secondItem="lNQ-jl-dXa" secondAttribute="height" multiplier="1.75926" id="gXT-mi-rR5"/>
+                            <constraint firstItem="TO2-Fx-yW7" firstAttribute="trailing" secondItem="gl5-xc-0vF" secondAttribute="trailing" constant="60" id="gp6-xA-iAn"/>
+                            <constraint firstItem="TO2-Fx-yW7" firstAttribute="bottom" secondItem="GFr-SZ-1fL" secondAttribute="bottom" id="iYI-LL-36o"/>
+                            <constraint firstItem="gl5-xc-0vF" firstAttribute="centerY" secondItem="lNQ-jl-dXa" secondAttribute="centerY" id="m9q-N0-Mj4"/>
+                            <constraint firstItem="lNQ-jl-dXa" firstAttribute="leading" secondItem="TO2-Fx-yW7" secondAttribute="leading" constant="38" id="oll-ap-aGc"/>
+                            <constraint firstItem="gl5-xc-0vF" firstAttribute="leading" secondItem="lNQ-jl-dXa" secondAttribute="trailing" constant="10" id="rH3-cJ-hRp"/>
+                            <constraint firstItem="lNQ-jl-dXa" firstAttribute="top" secondItem="TO2-Fx-yW7" secondAttribute="top" constant="87" id="upP-Tz-XYm"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="uSn-OJ-XiT"/>
+                    <connections>
+                        <outlet property="topicsTableView" destination="GFr-SZ-1fL" id="r4P-ZT-zlj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hbr-t5-gWB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -44,6 +98,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="globoHome" width="162" height="162"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
