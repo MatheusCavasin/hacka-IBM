@@ -30,7 +30,7 @@
                                 <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="25"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="QsT-g5-xkg">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="220" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="QsT-g5-xkg">
                                 <rect key="frame" x="0.0" y="274" width="414" height="622"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>

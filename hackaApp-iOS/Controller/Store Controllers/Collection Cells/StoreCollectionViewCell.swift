@@ -36,6 +36,7 @@ class StoreCollectionViewCell: UICollectionViewCell {
         }
         
         self.imgView.image = UIImage(named: imageView)
+        self.imgView.layer.cornerRadius = CGFloat(10.0)
         self.nameLabel.text = nameLabel
         self.priceLabel.text = String(priceLabel)
         

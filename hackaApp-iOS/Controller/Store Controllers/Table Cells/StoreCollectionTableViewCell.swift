@@ -41,31 +41,37 @@ class StoreCollectionTableViewCell: UITableViewCell, UICollectionViewDelegate, U
     func configure (with indice: Int){
         self.item = Singleton.shared.storeItems?[indice]
         collectionView.reloadData()
+//        self.collectionView.contentInset = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
+
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return self.item.items!.count
+        return 10
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: StoreCollectionViewCell.identifier, for: indexPath) as! StoreCollectionViewCell
         if indexPath.row == 0 {
-            cell.config(categoryLabel: item.category ?? "", activeLabel: true, imageView: item.items?[indexPath.row].image ?? "", nameLabel: item.items?[indexPath.row].title ?? "", priceLabel: item.items?[indexPath.row].price ?? 0.0)
+            cell.config(categoryLabel: item.category ?? "", activeLabel: true, imageView: "globoHome", nameLabel: item.items?[indexPath.row].title ?? "", priceLabel: item.items?[indexPath.row].price ?? 0.0)
+            // imageView: item.items?[indexPath.row].image ?? ""
         } else {
             // este é "false" no active Label
-            cell.config(categoryLabel: item.category ?? "", activeLabel: false, imageView: item.items?[indexPath.row].image ?? "", nameLabel: item.items?[indexPath.row].title ?? "", priceLabel: item.items?[indexPath.row].price ?? 0.0)
+            cell.config(categoryLabel: item.category ?? "", activeLabel: false, imageView:"globoHome", nameLabel: item.items?[0].title ?? "", priceLabel: item.items?[0].price ?? 0.0)
         }
         
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 150, height: 110)
+        return CGSize(width: 140, height: 190) // 190 / 230
     }
     
 //    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
 //        return 40
 //    }
+    
+    
+    
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
