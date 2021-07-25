@@ -16,10 +16,10 @@ class StoreCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var priceLabel: UILabel!
     
     
-    static let identifier = "StoreCollectionCell"
+    static let identifier = "StoreCollectionViewCell"
 
     static func nib() -> UINib {
-        return UINib(nibName: "StoreCollectionCell", bundle: nil)
+        return UINib(nibName: "StoreCollectionViewCell", bundle: nil)
     }
     
     
@@ -27,7 +27,7 @@ class StoreCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
     }
     
-    func config(categoryLabel: String, activeLabel: Bool, imageView: String, nameLabel: String, priceLabel: String) {
+    func config(categoryLabel: String, activeLabel: Bool, imageView: String, nameLabel: String, priceLabel: Float) {
                 
         if activeLabel {
             self.categoryLabel.text = categoryLabel
@@ -37,7 +37,7 @@ class StoreCollectionViewCell: UICollectionViewCell {
         
         self.imgView.image = UIImage(named: imageView)
         self.nameLabel.text = nameLabel
-        self.priceLabel.text = priceLabel
+        self.priceLabel.text = String(priceLabel)
         
         
         

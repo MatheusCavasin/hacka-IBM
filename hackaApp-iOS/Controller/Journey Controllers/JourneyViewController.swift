@@ -53,13 +53,13 @@ class JourneyViewController: UIViewController, UITableViewDelegate, UITableViewD
         if let vc = storyboard?.instantiateViewController(withIdentifier: "ProductJourney") as? ProductJourneyViewController {
             
             let controller: ProductJourneyViewController!
-            let view = UIStoryboard(name: "Journey", bundle: nil)
-            controller = view.instantiateViewController(identifier: "ProductJourney") as ProductJourneyViewController
-            controller.index = 2
-            navigationController?.show(controller, sender: self)
-            
+//            let view = UIStoryboard(name: "Journey", bundle: nil)
+//            controller = view.instantiateViewController(identifier: "ProductJourney") as ProductJourneyViewController
+//            controller.index = 2
+//            navigationController?.show(controller, sender: self)
+//
             if let vc = storyboard?.instantiateViewController(withIdentifier: "ProductJourney") as? ProductJourneyViewController {
-                vc.index = 2
+                vc.index = Singleton.shared.questions?[indexPath.row].products?.count
                 self.present(vc, animated:true, completion: {
                 })
             }
