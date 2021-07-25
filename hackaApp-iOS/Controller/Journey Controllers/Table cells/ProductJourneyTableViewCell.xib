@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Nunito-Regular.ttf">
+            <string>Nunito-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="ProductJourneyTableViewCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProductJourneyTableViewCell" rowHeight="125" id="KGk-i7-Jjw" customClass="ProductJourneyTableViewCell" customModule="hackaApp_iOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="125"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="125"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="01y-Xe-BBq">
+                        <rect key="frame" x="12.5" y="21.5" width="350" height="82"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zsG-0q-N1v">
+                                <rect key="frame" x="30" y="16" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="BP1-d0-G0g"/>
+                                    <constraint firstAttribute="width" constant="50" id="xWb-Tn-iIL"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oleo de cozinha" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mlc-Un-zHn">
+                                <rect key="frame" x="110" y="28.5" width="129" height="25"/>
+                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Mlc-Un-zHn" firstAttribute="leading" secondItem="zsG-0q-N1v" secondAttribute="trailing" constant="30" id="87b-sz-hCP"/>
+                            <constraint firstAttribute="height" constant="82" id="PbT-c3-G23"/>
+                            <constraint firstItem="zsG-0q-N1v" firstAttribute="leading" secondItem="01y-Xe-BBq" secondAttribute="leading" constant="30" id="ghN-MX-dJp"/>
+                            <constraint firstItem="zsG-0q-N1v" firstAttribute="centerY" secondItem="01y-Xe-BBq" secondAttribute="centerY" id="jjQ-pR-3BA"/>
+                            <constraint firstItem="Mlc-Un-zHn" firstAttribute="centerY" secondItem="01y-Xe-BBq" secondAttribute="centerY" id="mrH-BR-NZ1"/>
+                            <constraint firstAttribute="width" constant="350" id="sml-fY-4cx"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="01y-Xe-BBq" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="BNd-v0-s4x"/>
+                    <constraint firstItem="01y-Xe-BBq" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Pad-kO-kGH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="backView" destination="01y-Xe-BBq" id="0TM-2a-D9Q"/>
+                <outlet property="descricaoLabel" destination="Mlc-Un-zHn" id="YOo-h5-oLh"/>
+                <outlet property="imgView" destination="zsG-0q-N1v" id="5Qc-Mz-41N"/>
+            </connections>
+            <point key="canvasLocation" x="161.59420289855075" y="80.022321428571431"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

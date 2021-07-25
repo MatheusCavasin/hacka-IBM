@@ -10,7 +10,6 @@
 		132A95F3811DF4391222D06E /* Pods_hackaApp_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E87369A61E5A29B19D56B6DB /* Pods_hackaApp_iOS.framework */; };
 		885BA9F626AC977500A5A63D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885BA9F526AC977500A5A63D /* MainViewController.swift */; };
 		885BA9FA26AC980D00A5A63D /* Journey.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 885BA9F926AC980D00A5A63D /* Journey.storyboard */; };
-		885BA9FD26AC988700A5A63D /* Buy.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 885BA9FC26AC988700A5A63D /* Buy.storyboard */; };
 		885BAA0026AC989000A5A63D /* Sell.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 885BA9FF26AC989000A5A63D /* Sell.storyboard */; };
 		885BAA0426ACB64A00A5A63D /* SellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885BAA0326ACB64A00A5A63D /* SellViewController.swift */; };
 		885BAA0826ACB9B400A5A63D /* GeneralConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885BAA0726ACB9B400A5A63D /* GeneralConfig.swift */; };
@@ -23,19 +22,27 @@
 		8890BF4026AC62C0003BC0D3 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8890BF3F26AC62C0003BC0D3 /* Singleton.swift */; };
 		8890BF4426AC7AAF003BC0D3 /* ApiResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8890BF4326AC7AAF003BC0D3 /* ApiResource.swift */; };
 		8890BF4826AC7FAD003BC0D3 /* JourneyRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8890BF4726AC7FAD003BC0D3 /* JourneyRepository.swift */; };
-		88AC8A2C26ACCA6D001A4C82 /* BuyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88AC8A2B26ACCA6D001A4C82 /* BuyViewController.swift */; };
 		88AC8A3226ACD7CB001A4C82 /* JourneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88AC8A3126ACD7CA001A4C82 /* JourneyViewController.swift */; };
 		88AC8A3726ACDB84001A4C82 /* ProblemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88AC8A3526ACDB84001A4C82 /* ProblemTableViewCell.swift */; };
 		88AC8A3826ACDB84001A4C82 /* ProblemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88AC8A3626ACDB84001A4C82 /* ProblemTableViewCell.xib */; };
 		88AC8A3D26ACDE4C001A4C82 /* Nunito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 88AC8A3B26ACDE4B001A4C82 /* Nunito-Regular.ttf */; };
 		88AC8A3E26ACDE4C001A4C82 /* Nunito-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 88AC8A3C26ACDE4B001A4C82 /* Nunito-Bold.ttf */; };
+		88F1829126AD20F600DAE65C /* ProductJourneyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F1828F26AD20F600DAE65C /* ProductJourneyTableViewCell.swift */; };
+		88F1829226AD20F600DAE65C /* ProductJourneyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88F1829026AD20F600DAE65C /* ProductJourneyTableViewCell.xib */; };
+		88F1829426AD212B00DAE65C /* ProductJourneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F1829326AD212B00DAE65C /* ProductJourneyViewController.swift */; };
+		88F1829626AD8BA800DAE65C /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F1829526AD8BA800DAE65C /* Question.swift */; };
+		88F1829826AD8DB800DAE65C /* Store.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88F1829726AD8DB800DAE65C /* Store.storyboard */; };
+		88F1829A26AD8DF900DAE65C /* StoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F1829926AD8DF900DAE65C /* StoreViewController.swift */; };
+		88F1829C26AD910300DAE65C /* Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F1829B26AD910300DAE65C /* Questions.swift */; };
+		88F1829E26AD9A3D00DAE65C /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F1829D26AD9A3D00DAE65C /* Product.swift */; };
+		88F182A326ADB74100DAE65C /* StoreCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F182A126ADB74000DAE65C /* StoreCollectionViewCell.swift */; };
+		88F182A426ADB74100DAE65C /* StoreCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88F182A226ADB74000DAE65C /* StoreCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		73CC0752274F24C339C62D2F /* Pods-hackaApp-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hackaApp-iOS.debug.xcconfig"; path = "Target Support Files/Pods-hackaApp-iOS/Pods-hackaApp-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		885BA9F526AC977500A5A63D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		885BA9F926AC980D00A5A63D /* Journey.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Journey.storyboard; sourceTree = "<group>"; };
-		885BA9FC26AC988700A5A63D /* Buy.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Buy.storyboard; sourceTree = "<group>"; };
 		885BA9FF26AC989000A5A63D /* Sell.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Sell.storyboard; sourceTree = "<group>"; };
 		885BAA0326ACB64A00A5A63D /* SellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellViewController.swift; sourceTree = "<group>"; };
 		885BAA0726ACB9B400A5A63D /* GeneralConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralConfig.swift; sourceTree = "<group>"; };
@@ -50,12 +57,21 @@
 		8890BF3F26AC62C0003BC0D3 /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
 		8890BF4326AC7AAF003BC0D3 /* ApiResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResource.swift; sourceTree = "<group>"; };
 		8890BF4726AC7FAD003BC0D3 /* JourneyRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyRepository.swift; sourceTree = "<group>"; };
-		88AC8A2B26ACCA6D001A4C82 /* BuyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyViewController.swift; sourceTree = "<group>"; };
 		88AC8A3126ACD7CA001A4C82 /* JourneyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyViewController.swift; sourceTree = "<group>"; };
 		88AC8A3526ACDB84001A4C82 /* ProblemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProblemTableViewCell.swift; sourceTree = "<group>"; };
 		88AC8A3626ACDB84001A4C82 /* ProblemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProblemTableViewCell.xib; sourceTree = "<group>"; };
 		88AC8A3B26ACDE4B001A4C82 /* Nunito-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Regular.ttf"; sourceTree = "<group>"; };
 		88AC8A3C26ACDE4B001A4C82 /* Nunito-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Bold.ttf"; sourceTree = "<group>"; };
+		88F1828F26AD20F600DAE65C /* ProductJourneyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductJourneyTableViewCell.swift; sourceTree = "<group>"; };
+		88F1829026AD20F600DAE65C /* ProductJourneyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductJourneyTableViewCell.xib; sourceTree = "<group>"; };
+		88F1829326AD212B00DAE65C /* ProductJourneyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductJourneyViewController.swift; sourceTree = "<group>"; };
+		88F1829526AD8BA800DAE65C /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		88F1829726AD8DB800DAE65C /* Store.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Store.storyboard; sourceTree = "<group>"; };
+		88F1829926AD8DF900DAE65C /* StoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreViewController.swift; sourceTree = "<group>"; };
+		88F1829B26AD910300DAE65C /* Questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questions.swift; sourceTree = "<group>"; };
+		88F1829D26AD9A3D00DAE65C /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		88F182A126ADB74000DAE65C /* StoreCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreCollectionViewCell.swift; sourceTree = "<group>"; };
+		88F182A226ADB74000DAE65C /* StoreCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoreCollectionViewCell.xib; sourceTree = "<group>"; };
 		D7B6CBE0C9CA10104F514AD5 /* Pods-hackaApp-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hackaApp-iOS.release.xcconfig"; path = "Target Support Files/Pods-hackaApp-iOS/Pods-hackaApp-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		E87369A61E5A29B19D56B6DB /* Pods_hackaApp_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hackaApp_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -76,7 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				88AC8A2F26ACD74B001A4C82 /* Journey Controllers */,
-				88AC8A2A26ACCA43001A4C82 /* Buy Controllers */,
+				88AC8A2A26ACCA43001A4C82 /* Store Controllers */,
 				885BAA0226ACB62C00A5A63D /* Sell Controllers */,
 				885BA9F526AC977500A5A63D /* MainViewController.swift */,
 			);
@@ -141,6 +157,9 @@
 			children = (
 				8890BF3F26AC62C0003BC0D3 /* Singleton.swift */,
 				885BAA0726ACB9B400A5A63D /* GeneralConfig.swift */,
+				88F1829B26AD910300DAE65C /* Questions.swift */,
+				88F1829526AD8BA800DAE65C /* Question.swift */,
+				88F1829D26AD9A3D00DAE65C /* Product.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -150,8 +169,8 @@
 			children = (
 				8890BF2526AC336F003BC0D3 /* Main.storyboard */,
 				885BA9F926AC980D00A5A63D /* Journey.storyboard */,
-				885BA9FC26AC988700A5A63D /* Buy.storyboard */,
 				885BA9FF26AC989000A5A63D /* Sell.storyboard */,
+				88F1829726AD8DB800DAE65C /* Store.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -164,12 +183,14 @@
 			path = Resource;
 			sourceTree = "<group>";
 		};
-		88AC8A2A26ACCA43001A4C82 /* Buy Controllers */ = {
+		88AC8A2A26ACCA43001A4C82 /* Store Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				88AC8A2B26ACCA6D001A4C82 /* BuyViewController.swift */,
+				88F1829F26ADB5FE00DAE65C /* Collection Cells */,
+				88F182A026ADB61400DAE65C /* Tab Bar Cells */,
+				88F1829926AD8DF900DAE65C /* StoreViewController.swift */,
 			);
-			path = "Buy Controllers";
+			path = "Store Controllers";
 			sourceTree = "<group>";
 		};
 		88AC8A2F26ACD74B001A4C82 /* Journey Controllers */ = {
@@ -177,6 +198,7 @@
 			children = (
 				88AC8A3426ACDB0E001A4C82 /* Table cells */,
 				88AC8A3126ACD7CA001A4C82 /* JourneyViewController.swift */,
+				88F1829326AD212B00DAE65C /* ProductJourneyViewController.swift */,
 			);
 			path = "Journey Controllers";
 			sourceTree = "<group>";
@@ -186,6 +208,8 @@
 			children = (
 				88AC8A3526ACDB84001A4C82 /* ProblemTableViewCell.swift */,
 				88AC8A3626ACDB84001A4C82 /* ProblemTableViewCell.xib */,
+				88F1828F26AD20F600DAE65C /* ProductJourneyTableViewCell.swift */,
+				88F1829026AD20F600DAE65C /* ProductJourneyTableViewCell.xib */,
 			);
 			path = "Table cells";
 			sourceTree = "<group>";
@@ -197,6 +221,22 @@
 				88AC8A3B26ACDE4B001A4C82 /* Nunito-Regular.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		88F1829F26ADB5FE00DAE65C /* Collection Cells */ = {
+			isa = PBXGroup;
+			children = (
+				88F182A126ADB74000DAE65C /* StoreCollectionViewCell.swift */,
+				88F182A226ADB74000DAE65C /* StoreCollectionViewCell.xib */,
+			);
+			path = "Collection Cells";
+			sourceTree = "<group>";
+		};
+		88F182A026ADB61400DAE65C /* Tab Bar Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Tab Bar Cells";
 			sourceTree = "<group>";
 		};
 		AF7F646AF9A2DD2BD9D4FF03 /* Pods */ = {
@@ -276,13 +316,15 @@
 			files = (
 				88AC8A3826ACDB84001A4C82 /* ProblemTableViewCell.xib in Resources */,
 				8890BF2C26AC3373003BC0D3 /* LaunchScreen.storyboard in Resources */,
+				88F182A426ADB74100DAE65C /* StoreCollectionViewCell.xib in Resources */,
 				88AC8A3D26ACDE4C001A4C82 /* Nunito-Regular.ttf in Resources */,
 				885BA9FA26AC980D00A5A63D /* Journey.storyboard in Resources */,
+				88F1829226AD20F600DAE65C /* ProductJourneyTableViewCell.xib in Resources */,
 				88AC8A3E26ACDE4C001A4C82 /* Nunito-Bold.ttf in Resources */,
 				885BAA0026AC989000A5A63D /* Sell.storyboard in Resources */,
 				8890BF2926AC3373003BC0D3 /* Assets.xcassets in Resources */,
 				8890BF2726AC336F003BC0D3 /* Main.storyboard in Resources */,
-				885BA9FD26AC988700A5A63D /* Buy.storyboard in Resources */,
+				88F1829826AD8DB800DAE65C /* Store.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,13 +362,19 @@
 			files = (
 				885BA9F626AC977500A5A63D /* MainViewController.swift in Sources */,
 				88AC8A3726ACDB84001A4C82 /* ProblemTableViewCell.swift in Sources */,
-				88AC8A2C26ACCA6D001A4C82 /* BuyViewController.swift in Sources */,
+				88F1829626AD8BA800DAE65C /* Question.swift in Sources */,
+				88F1829426AD212B00DAE65C /* ProductJourneyViewController.swift in Sources */,
 				8890BF2426AC336F003BC0D3 /* ViewController.swift in Sources */,
+				88F1829C26AD910300DAE65C /* Questions.swift in Sources */,
+				88F1829E26AD9A3D00DAE65C /* Product.swift in Sources */,
+				88F1829A26AD8DF900DAE65C /* StoreViewController.swift in Sources */,
 				885BAA0426ACB64A00A5A63D /* SellViewController.swift in Sources */,
 				8890BF4026AC62C0003BC0D3 /* Singleton.swift in Sources */,
+				88F182A326ADB74100DAE65C /* StoreCollectionViewCell.swift in Sources */,
 				8890BF2026AC336F003BC0D3 /* AppDelegate.swift in Sources */,
 				8890BF4426AC7AAF003BC0D3 /* ApiResource.swift in Sources */,
 				8890BF4826AC7FAD003BC0D3 /* JourneyRepository.swift in Sources */,
+				88F1829126AD20F600DAE65C /* ProductJourneyTableViewCell.swift in Sources */,
 				8890BF2226AC336F003BC0D3 /* SceneDelegate.swift in Sources */,
 				88AC8A3226ACD7CB001A4C82 /* JourneyViewController.swift in Sources */,
 				885BAA0826ACB9B400A5A63D /* GeneralConfig.swift in Sources */,

@@ -9,15 +9,26 @@ import Foundation
 
 class JourneyRepository {
     
+    
     func getQuestions() {
         let url = Singleton.shared.apiEndPoint
         
         ApiResource.request(method: "GET", url: url, params: nil, body: nil, withAuth: false) { (result, err) in
             if result != nil {
-                let dictResult = result as! Dictionary<String, Any>
-                print(dictResult)
+                
+                let decoder = JSONDecoder()
+                do {
+                    let questions = try decoder.decode(Questions.self, from: result as! Data)
+                    print(questions.questions?[0].products?[0].info ?? "")
+                    Singleton.shared.questions = questions.questions
+                }
+                catch {
+                    
+                }
+                
+                
                 DispatchQueue.main.async {
-                    NotificationCenter.default.post(name: Notification.Name(rawValue: "AnucniosCarregados"), object: nil)
+                    NotificationCenter.default.post(name: Notification.Name(rawValue: "QuestionsLoaded"), object: nil) // AnucniosCarregados
                 }
             }
             else {
@@ -32,5 +43,6 @@ class JourneyRepository {
 }
 
 // exemplo para pegar os dados JSON
-// var a = dictResult["questions"] as! [[String : Any?]]
-// print(a[0]["title"])
+//var a = dictResult["questions"] as! [[String : Any?]]
+//print(a[0]["title"] as! String)
+//a.count

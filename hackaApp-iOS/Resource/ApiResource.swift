@@ -57,7 +57,7 @@ class ApiResource{
             //requestBody = "{\(requestBody)}"
             
             var requestBody: String = ""
-            
+                        
             if let theJSONData = try? JSONSerialization.data(
                 withJSONObject: body,
                 options: []) {
@@ -90,7 +90,7 @@ class ApiResource{
                     //A resposta chegou
                     print("RequestApi.request: A resposta chegou")
                     let response = try JSONSerialization.jsonObject(with: data, options: [])
-                    completion(response, nil)
+                    completion(data, nil)
                 }
                 else {
                     print("RequestApi.request: Não houve resposta")

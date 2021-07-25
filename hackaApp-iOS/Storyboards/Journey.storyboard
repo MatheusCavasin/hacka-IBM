@@ -37,7 +37,7 @@
                                     <constraint firstAttribute="height" constant="54" id="iYh-PM-Akx"/>
                                 </constraints>
                             </imageView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="GFr-SZ-1fL">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="90" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="GFr-SZ-1fL">
                                 <rect key="frame" x="32" y="324" width="350" height="538"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
@@ -76,7 +76,55 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hbr-t5-gWB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="298.55072463768118" y="-151.33928571428569"/>
+            <point key="canvasLocation" x="549" y="-151"/>
+        </scene>
+        <!--Product Journey View Controller-->
+        <scene sceneID="xgA-b1-rhQ">
+            <objects>
+                <viewController restorationIdentifier="ProductJourney" storyboardIdentifier="ProductJourney" id="iHf-PJ-1Rq" customClass="ProductJourneyViewController" customModule="hackaApp_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ehc-HB-QDD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qual produto você pode salvar hoje?" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UXt-ad-CiB">
+                                <rect key="frame" x="38" y="139" width="338" height="68.5"/>
+                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="25"/>
+                                <color key="textColor" red="0.090196078430000007" green="0.2470588235" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9nF-v0-5d1">
+                                <rect key="frame" x="32" y="280" width="350" height="582"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selecione o tipo de produto que deseja vender" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6in-NW-KOc">
+                                <rect key="frame" x="38" y="217.5" width="331.5" height="22"/>
+                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="16"/>
+                                <color key="textColor" red="0.090196078430000007" green="0.2470588235" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hg6-3a-NBe"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6in-NW-KOc" firstAttribute="leading" secondItem="UXt-ad-CiB" secondAttribute="leading" id="Qg6-fR-6uo"/>
+                            <constraint firstItem="hg6-3a-NBe" firstAttribute="bottom" secondItem="9nF-v0-5d1" secondAttribute="bottom" id="SVf-Xz-zCs"/>
+                            <constraint firstItem="9nF-v0-5d1" firstAttribute="width" secondItem="UXt-ad-CiB" secondAttribute="width" multiplier="1.0355" id="Vzm-pA-Ydu"/>
+                            <constraint firstItem="UXt-ad-CiB" firstAttribute="leading" secondItem="hg6-3a-NBe" secondAttribute="leading" constant="38" id="Ypi-Xk-2Tn"/>
+                            <constraint firstItem="UXt-ad-CiB" firstAttribute="top" secondItem="hg6-3a-NBe" secondAttribute="top" constant="95" id="hB0-TV-G1Z"/>
+                            <constraint firstItem="UXt-ad-CiB" firstAttribute="centerX" secondItem="hg6-3a-NBe" secondAttribute="centerX" id="i5t-h6-oHN"/>
+                            <constraint firstItem="6in-NW-KOc" firstAttribute="top" secondItem="UXt-ad-CiB" secondAttribute="bottom" constant="10" id="iQx-Eu-gYF"/>
+                            <constraint firstItem="9nF-v0-5d1" firstAttribute="centerX" secondItem="hg6-3a-NBe" secondAttribute="centerX" id="y7I-oe-7tk"/>
+                            <constraint firstItem="9nF-v0-5d1" firstAttribute="top" secondItem="6in-NW-KOc" secondAttribute="bottom" constant="40.5" id="ycq-u0-z9I"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="K3g-10-6jJ"/>
+                    <connections>
+                        <outlet property="productsTableView" destination="9nF-v0-5d1" id="7sS-Tt-1q7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jCX-JF-9lL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1417" y="-151"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="7Ci-R3-7Lf">

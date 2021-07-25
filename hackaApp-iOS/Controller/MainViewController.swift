@@ -24,12 +24,12 @@ class MainViewController: UITabBarController {
     func setUp() {
         
         let storyboard0 = UIStoryboard(name: "Journey", bundle: nil)
-        let storyboard1 = UIStoryboard(name: "Buy", bundle: nil)
+        let storyboard1 = UIStoryboard(name: "Store", bundle: nil)
         let storyboard2 = UIStoryboard(name: "Sell", bundle: nil)
         
         
         let firstBookTableVc = storyboard0.instantiateViewController(withIdentifier: "TabJourney")
-        let secondBookTableVc = storyboard1.instantiateViewController(withIdentifier: "TabBuy")
+        let secondBookTableVc = storyboard1.instantiateViewController(withIdentifier: "TabStore")
         let thirdBookTableVc = storyboard2.instantiateViewController(withIdentifier: "TabSell")
 
         //configure the view controllers here...
@@ -49,7 +49,7 @@ class MainViewController: UITabBarController {
 //        tabBar.items?[2].title = "Sell"
 //
         tabBar.items?[0].title = "Journey"
-        tabBar.items?[1].title = "Buy"
+        tabBar.items?[1].title = "Store"
         tabBar.items?[2].title = "Sell"
     }
 }

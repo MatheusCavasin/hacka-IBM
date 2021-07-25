@@ -26,22 +26,22 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2a7-9D-yby">
-                        <rect key="frame" x="28.5" y="8" width="350" height="82"/>
+                        <rect key="frame" x="28.5" y="6" width="350" height="86"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="v6Z-y0-H7S">
-                                <rect key="frame" x="30" y="18.5" width="45" height="45"/>
+                                <rect key="frame" x="30" y="20.5" width="45" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="45" id="Dec-Ng-vkC"/>
                                     <constraint firstAttribute="height" constant="45" id="Nbi-qM-4zJ"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Plásticos no oceano" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vfB-g8-KRx">
-                                <rect key="frame" x="95" y="8" width="147" height="22"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Plásticos no oceano" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vfB-g8-KRx">
+                                <rect key="frame" x="95" y="8" width="218" height="22"/>
                                 <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="16"/>
                                 <color key="textColor" red="0.090196078431372548" green="0.24705882352941178" blue="0.22352941176470587" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ajude a salvar as tartarugas e outros animais marinhos" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xag-gX-Nxs">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ajude a salvar as tartarugas e outros animais marinhos" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xag-gX-Nxs">
                                 <rect key="frame" x="95" y="30" width="218" height="33"/>
                                 <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="12"/>
                                 <color key="textColor" red="0.090196078430000007" green="0.2470588235" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -51,14 +51,16 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="vfB-g8-KRx" firstAttribute="leading" secondItem="v6Z-y0-H7S" secondAttribute="trailing" constant="20" id="0TX-Ql-Ddb"/>
+                            <constraint firstItem="xag-gX-Nxs" firstAttribute="height" secondItem="v6Z-y0-H7S" secondAttribute="height" multiplier="0.733333" id="ABn-8t-kDZ"/>
                             <constraint firstItem="v6Z-y0-H7S" firstAttribute="centerY" secondItem="2a7-9D-yby" secondAttribute="centerY" id="G1J-Lz-JYS"/>
                             <constraint firstItem="xag-gX-Nxs" firstAttribute="top" secondItem="vfB-g8-KRx" secondAttribute="bottom" id="MgF-O2-m0q"/>
-                            <constraint firstAttribute="height" constant="82" id="RVR-eM-qWX"/>
+                            <constraint firstAttribute="height" constant="86" id="RVR-eM-qWX"/>
                             <constraint firstItem="v6Z-y0-H7S" firstAttribute="leading" secondItem="2a7-9D-yby" secondAttribute="leading" constant="30" id="UQN-uP-v1e"/>
                             <constraint firstAttribute="trailing" secondItem="xag-gX-Nxs" secondAttribute="trailing" constant="37" id="Xsj-Se-Puk"/>
                             <constraint firstItem="vfB-g8-KRx" firstAttribute="top" secondItem="2a7-9D-yby" secondAttribute="top" constant="8" id="fFV-UM-Fa2"/>
                             <constraint firstItem="xag-gX-Nxs" firstAttribute="leading" secondItem="vfB-g8-KRx" secondAttribute="leading" id="gYH-UZ-Rws"/>
                             <constraint firstAttribute="width" constant="350" id="jZx-wC-pjd"/>
+                            <constraint firstAttribute="trailing" secondItem="vfB-g8-KRx" secondAttribute="trailing" constant="37" id="oMI-NS-Njd"/>
                         </constraints>
                     </view>
                 </subviews>

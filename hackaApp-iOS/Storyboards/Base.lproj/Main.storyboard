@@ -64,10 +64,10 @@
             </objects>
             <point key="canvasLocation" x="1720" y="-41"/>
         </scene>
-        <!--Buy-->
+        <!--Store-->
         <scene sceneID="hdX-WP-yvc">
             <objects>
-                <viewControllerPlaceholder storyboardName="Buy" id="n1T-0K-jRP" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Store" id="n1T-0K-jRP" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" selectedImage="storeTab" id="v3t-ue-ln1"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g7S-PE-q3J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

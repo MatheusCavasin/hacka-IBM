@@ -10,8 +10,8 @@ import Foundation
 class Singleton {
     static var shared = Singleton()
     
-    var apiEndPoint = "https://run.mocky.io/v3/891ff141-8e96-488e-ab4d-88195ad4e1c2"
-    
+    var apiEndPoint = "https://run.mocky.io/v3/7068b42d-f803-42d6-b8db-bbeeec7b0f92"
+    var questions: [Question]? = []
     private init() {}
     
 }
