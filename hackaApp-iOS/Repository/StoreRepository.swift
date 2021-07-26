@@ -11,7 +11,7 @@ class StoreRepository {
     
     
     func getStoreItems() {
-        let url = "https://run.mocky.io/v3/7277628a-8348-4dc9-87d9-441fcadbc1c3" //Singleton.shared.apiEndPoint
+        let url = "https://hacka-ibm-team-24.herokuapp.com/api/v1/store"  //"https://run.mocky.io/v3/7277628a-8348-4dc9-87d9-441fcadbc1c3" //Singleton.shared.apiEndPoint
         
         ApiResource.request(method: "GET", url: url, params: nil, body: nil, withAuth: false) { (result, err) in
             if result != nil {

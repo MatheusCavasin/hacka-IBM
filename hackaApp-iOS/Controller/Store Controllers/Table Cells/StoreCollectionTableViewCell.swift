@@ -47,17 +47,17 @@ class StoreCollectionTableViewCell: UITableViewCell, UICollectionViewDelegate, U
     
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return item.items!.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: StoreCollectionViewCell.identifier, for: indexPath) as! StoreCollectionViewCell
         if indexPath.row == 0 {
-            cell.config(categoryLabel: item.category ?? "", activeLabel: true, imageView: "globoHome", nameLabel: item.items?[indexPath.row].title ?? "", priceLabel: item.items?[indexPath.row].price ?? 0.0)
+            cell.config(categoryLabel: item.category ?? "", activeLabel: true, imageView: item.items?[indexPath.row].image ?? "", nameLabel: item.items?[indexPath.row].title ?? "", priceLabel: item.items?[indexPath.row].price ?? 0.0)
             // imageView: item.items?[indexPath.row].image ?? ""
         } else {
             // este é "false" no active Label
-            cell.config(categoryLabel: item.category ?? "", activeLabel: false, imageView:"globoHome", nameLabel: item.items?[0].title ?? "", priceLabel: item.items?[0].price ?? 0.0)
+            cell.config(categoryLabel: item.category ?? "", activeLabel: false, imageView: item.items?[indexPath.row].image ?? "", nameLabel: item.items?[indexPath.row].title ?? "", priceLabel: item.items?[indexPath.row].price ?? 0.0)
         }
         
         return cell
