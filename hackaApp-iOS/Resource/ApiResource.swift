@@ -10,7 +10,7 @@ import Foundation
 class ApiResource{
     
     
-    static func request(method: String, url: String, params: [String: Any]?, body: [String: Any]?, withAuth: Bool,
+    static func request(method: String, url: String, params: [String: Any]? = nil, body: [String: Any]? = nil, withAuth: Bool = false,
                      completion: @escaping (Any?, Error?) -> Void){
 
         print("entrou em request")

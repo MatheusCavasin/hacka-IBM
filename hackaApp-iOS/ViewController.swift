@@ -12,7 +12,7 @@ class ViewController: UIViewController {
     let journeyRepository = JourneyRepository()
     override func viewDidLoad() {
         super.viewDidLoad()
-        journeyRepository.getQuestions()
+//        journeyRepository.getQuestions()
         // Do any additional setup after loading the view.
     }
     

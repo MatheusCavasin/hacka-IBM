@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MOh-A2-mxX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MOh-A2-mxX">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -86,20 +86,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qual produto você pode salvar hoje?" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UXt-ad-CiB">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qual produto você pode salvar hoje?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UXt-ad-CiB">
                                 <rect key="frame" x="38" y="139" width="338" height="68.5"/>
                                 <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="25"/>
-                                <color key="textColor" red="0.090196078430000007" green="0.2470588235" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9nF-v0-5d1">
-                                <rect key="frame" x="32" y="280" width="350" height="582"/>
+                                <rect key="frame" x="32" y="307.5" width="350" height="554.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selecione o tipo de produto que deseja vender" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6in-NW-KOc">
-                                <rect key="frame" x="38" y="217.5" width="331.5" height="22"/>
-                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="16"/>
-                                <color key="textColor" red="0.090196078430000007" green="0.2470588235" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selecione o tipo de produto que deseja vender" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6in-NW-KOc">
+                                <rect key="frame" x="38" y="217.5" width="338" height="49.5"/>
+                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="18"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -113,6 +113,7 @@
                             <constraint firstItem="UXt-ad-CiB" firstAttribute="top" secondItem="hg6-3a-NBe" secondAttribute="top" constant="95" id="hB0-TV-G1Z"/>
                             <constraint firstItem="UXt-ad-CiB" firstAttribute="centerX" secondItem="hg6-3a-NBe" secondAttribute="centerX" id="i5t-h6-oHN"/>
                             <constraint firstItem="6in-NW-KOc" firstAttribute="top" secondItem="UXt-ad-CiB" secondAttribute="bottom" constant="10" id="iQx-Eu-gYF"/>
+                            <constraint firstItem="6in-NW-KOc" firstAttribute="trailing" secondItem="UXt-ad-CiB" secondAttribute="trailing" id="qr7-Tm-eEx"/>
                             <constraint firstItem="9nF-v0-5d1" firstAttribute="centerX" secondItem="hg6-3a-NBe" secondAttribute="centerX" id="y7I-oe-7tk"/>
                             <constraint firstItem="9nF-v0-5d1" firstAttribute="top" secondItem="6in-NW-KOc" secondAttribute="bottom" constant="40.5" id="ycq-u0-z9I"/>
                         </constraints>
@@ -147,7 +148,7 @@
         <!--Instructions Journey View Controller-->
         <scene sceneID="Igl-ae-pLT">
             <objects>
-                <viewController id="h2k-B9-Ht0" customClass="InstructionsJourneyViewController" customModule="hackaApp_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="InstructionsJourney" id="h2k-B9-Ht0" customClass="InstructionsJourneyViewController" customModule="hackaApp_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IQf-Xc-lTC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -155,17 +156,17 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qual produto você pode salvar hoje?" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qvg-s9-Mlg">
                                 <rect key="frame" x="38" y="139" width="338" height="68.5"/>
                                 <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="25"/>
-                                <color key="textColor" red="0.090196078430000007" green="0.2470588235" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UWS-9v-xB9">
-                                <rect key="frame" x="32" y="280" width="350" height="582"/>
+                                <rect key="frame" x="32" y="307.5" width="350" height="554.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selecione o tipo de produto que deseja vender" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zql-W7-34I">
-                                <rect key="frame" x="38" y="217.5" width="331.5" height="22"/>
-                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="16"/>
-                                <color key="textColor" red="0.090196078430000007" green="0.2470588235" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selecione o tipo de produto que deseja vender" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zql-W7-34I">
+                                <rect key="frame" x="38" y="217.5" width="338" height="49.5"/>
+                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="18"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -173,6 +174,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Qvg-s9-Mlg" firstAttribute="centerX" secondItem="PN7-wU-AVP" secondAttribute="centerX" id="6RF-cE-966"/>
+                            <constraint firstItem="Zql-W7-34I" firstAttribute="trailing" secondItem="Qvg-s9-Mlg" secondAttribute="trailing" id="AH6-sr-70n"/>
                             <constraint firstItem="UWS-9v-xB9" firstAttribute="centerX" secondItem="PN7-wU-AVP" secondAttribute="centerX" id="IQb-6H-gkX"/>
                             <constraint firstItem="Zql-W7-34I" firstAttribute="top" secondItem="Qvg-s9-Mlg" secondAttribute="bottom" constant="10" id="IZp-ll-hdU"/>
                             <constraint firstItem="UWS-9v-xB9" firstAttribute="top" secondItem="Zql-W7-34I" secondAttribute="bottom" constant="40.5" id="XXZ-e9-dta"/>
@@ -185,12 +187,14 @@
                     </view>
                     <navigationItem key="navigationItem" id="uaG-UN-I8O"/>
                     <connections>
+                        <outlet property="instructionSubtitle" destination="Zql-W7-34I" id="Y92-CH-1Am"/>
                         <outlet property="instructionTableView" destination="UWS-9v-xB9" id="BaG-KE-thd"/>
+                        <outlet property="instructionTitle" destination="Qvg-s9-Mlg" id="8dR-Vs-sFh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GgR-gZ-Fff" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2572" y="-151"/>
+            <point key="canvasLocation" x="2357" y="-151"/>
         </scene>
     </scenes>
     <resources>

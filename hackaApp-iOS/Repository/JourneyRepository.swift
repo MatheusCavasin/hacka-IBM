@@ -9,11 +9,10 @@ import Foundation
 
 class JourneyRepository {
     
+    let endpoint = "https://hacka-ibm-team-24.herokuapp.com/api/v1/question"
     
-    func getQuestions() {
-        let url = Singleton.shared.apiEndPoint
-        
-        ApiResource.request(method: "GET", url: url, params: nil, body: nil, withAuth: false) { (result, err) in
+    func getQuestions(completion: @escaping ([Question]?) -> Void) {
+        ApiResource.request(method: "GET", url: endpoint) { (result, err) in
             if result != nil {
                 
                 let decoder = JSONDecoder()
@@ -21,28 +20,14 @@ class JourneyRepository {
                     let questions = try decoder.decode(Questions.self, from: result as! Data)
                     print(questions.questions?[0].products?[0].info ?? "")
                     Singleton.shared.questions = questions.questions
+                    completion(questions.questions)
                 }
-                catch {
-                    
-                }
-                
-                
-                DispatchQueue.main.async {
-                    NotificationCenter.default.post(name: Notification.Name(rawValue: "QuestionsLoaded"), object: nil) // AnucniosCarregados
+                catch let error{
+                    print(error)
                 }
             }
             else {
-                DispatchQueue.main.async {
-                    NotificationCenter.default.post(name: Notification.Name(rawValue: "ErroAoCarregarAnuncios"), object: nil)
-                }
             }
-            
         }
     }
-    
 }
-
-// exemplo para pegar os dados JSON
-//var a = dictResult["questions"] as! [[String : Any?]]
-//print(a[0]["title"] as! String)
-//a.count

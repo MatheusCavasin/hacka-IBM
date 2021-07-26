@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		132A95F3811DF4391222D06E /* Pods_hackaApp_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E87369A61E5A29B19D56B6DB /* Pods_hackaApp_iOS.framework */; };
+		393DDBCB26AE0DE900AC7CAE /* InstructionsJorneyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393DDBC926AE0DE900AC7CAE /* InstructionsJorneyTableViewCell.swift */; };
+		393DDBCC26AE0DE900AC7CAE /* InstructionsJorneyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 393DDBCA26AE0DE900AC7CAE /* InstructionsJorneyTableViewCell.xib */; };
+		393DDBCF26AE12C000AC7CAE /* HowToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393DDBCE26AE12C000AC7CAE /* HowToDo.swift */; };
+		393DDBD226AE131D00AC7CAE /* StepToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393DDBD126AE131D00AC7CAE /* StepToDo.swift */; };
+		39B7E1E926AE26C600EE0BA1 /* BtnJourneyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B7E1E726AE26C600EE0BA1 /* BtnJourneyTableViewCell.swift */; };
+		39B7E1EA26AE26C600EE0BA1 /* BtnJourneyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39B7E1E826AE26C600EE0BA1 /* BtnJourneyTableViewCell.xib */; };
 		885BA9F626AC977500A5A63D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885BA9F526AC977500A5A63D /* MainViewController.swift */; };
 		885BA9FA26AC980D00A5A63D /* Journey.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 885BA9F926AC980D00A5A63D /* Journey.storyboard */; };
 		885BAA0026AC989000A5A63D /* Sell.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 885BA9FF26AC989000A5A63D /* Sell.storyboard */; };
@@ -48,6 +54,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		393DDBC926AE0DE900AC7CAE /* InstructionsJorneyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionsJorneyTableViewCell.swift; sourceTree = "<group>"; };
+		393DDBCA26AE0DE900AC7CAE /* InstructionsJorneyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InstructionsJorneyTableViewCell.xib; sourceTree = "<group>"; };
+		393DDBCE26AE12C000AC7CAE /* HowToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToDo.swift; sourceTree = "<group>"; };
+		393DDBD126AE131D00AC7CAE /* StepToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepToDo.swift; sourceTree = "<group>"; };
+		39B7E1E726AE26C600EE0BA1 /* BtnJourneyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BtnJourneyTableViewCell.swift; sourceTree = "<group>"; };
+		39B7E1E826AE26C600EE0BA1 /* BtnJourneyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BtnJourneyTableViewCell.xib; sourceTree = "<group>"; };
 		73CC0752274F24C339C62D2F /* Pods-hackaApp-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hackaApp-iOS.debug.xcconfig"; path = "Target Support Files/Pods-hackaApp-iOS/Pods-hackaApp-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		885BA9F526AC977500A5A63D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		885BA9F926AC980D00A5A63D /* Journey.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Journey.storyboard; sourceTree = "<group>"; };
@@ -227,6 +239,10 @@
 				88AC8A3626ACDB84001A4C82 /* ProblemTableViewCell.xib */,
 				88F1828F26AD20F600DAE65C /* ProductJourneyTableViewCell.swift */,
 				88F1829026AD20F600DAE65C /* ProductJourneyTableViewCell.xib */,
+				393DDBC926AE0DE900AC7CAE /* InstructionsJorneyTableViewCell.swift */,
+				393DDBCA26AE0DE900AC7CAE /* InstructionsJorneyTableViewCell.xib */,
+				39B7E1E726AE26C600EE0BA1 /* BtnJourneyTableViewCell.swift */,
+				39B7E1E826AE26C600EE0BA1 /* BtnJourneyTableViewCell.xib */,
 			);
 			path = "Table cells";
 			sourceTree = "<group>";
@@ -264,6 +280,8 @@
 				88F1829B26AD910300DAE65C /* Questions.swift */,
 				88F1829526AD8BA800DAE65C /* Question.swift */,
 				88F1829D26AD9A3D00DAE65C /* Product.swift */,
+				393DDBCE26AE12C000AC7CAE /* HowToDo.swift */,
+				393DDBD126AE131D00AC7CAE /* StepToDo.swift */,
 			);
 			path = "Journey Model";
 			sourceTree = "<group>";
@@ -355,6 +373,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				88AC8A3826ACDB84001A4C82 /* ProblemTableViewCell.xib in Resources */,
+				39B7E1EA26AE26C600EE0BA1 /* BtnJourneyTableViewCell.xib in Resources */,
 				8890BF2C26AC3373003BC0D3 /* LaunchScreen.storyboard in Resources */,
 				88F182A426ADB74100DAE65C /* StoreCollectionViewCell.xib in Resources */,
 				88AC8A3D26ACDE4C001A4C82 /* Nunito-Regular.ttf in Resources */,
@@ -366,6 +385,7 @@
 				8890BF2726AC336F003BC0D3 /* Main.storyboard in Resources */,
 				88F182A826ADD38100DAE65C /* StoreCollectionTableViewCell.xib in Resources */,
 				88F1829826AD8DB800DAE65C /* Store.storyboard in Resources */,
+				393DDBCC26AE0DE900AC7CAE /* InstructionsJorneyTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,8 +426,11 @@
 				88AC8A3726ACDB84001A4C82 /* ProblemTableViewCell.swift in Sources */,
 				88F182B626ADF2FB00DAE65C /* InstructionsJourneyViewController.swift in Sources */,
 				88F1829626AD8BA800DAE65C /* Question.swift in Sources */,
+				39B7E1E926AE26C600EE0BA1 /* BtnJourneyTableViewCell.swift in Sources */,
 				88F182AE26ADDC7400DAE65C /* StoreItem.swift in Sources */,
 				88F1829426AD212B00DAE65C /* ProductJourneyViewController.swift in Sources */,
+				393DDBD226AE131D00AC7CAE /* StepToDo.swift in Sources */,
+				393DDBCF26AE12C000AC7CAE /* HowToDo.swift in Sources */,
 				8890BF2426AC336F003BC0D3 /* ViewController.swift in Sources */,
 				88F182B026ADDE1200DAE65C /* Item.swift in Sources */,
 				88F1829C26AD910300DAE65C /* Questions.swift in Sources */,
@@ -422,6 +445,7 @@
 				8890BF4426AC7AAF003BC0D3 /* ApiResource.swift in Sources */,
 				8890BF4826AC7FAD003BC0D3 /* JourneyRepository.swift in Sources */,
 				88F1829126AD20F600DAE65C /* ProductJourneyTableViewCell.swift in Sources */,
+				393DDBCB26AE0DE900AC7CAE /* InstructionsJorneyTableViewCell.swift in Sources */,
 				8890BF2226AC336F003BC0D3 /* SceneDelegate.swift in Sources */,
 				88F182B426ADEB6F00DAE65C /* StoreRepository.swift in Sources */,
 				88AC8A3226ACD7CB001A4C82 /* JourneyViewController.swift in Sources */,

@@ -11,10 +11,10 @@ struct Product: Codable {
     var title: String?
     var image: String?
     var info: String?
-    
     var category: String?
+    var howtodo :[HowToDo]?
     
     internal enum CondingKeys : String, CodingKey {
-        case title, image, info, category
+        case title, image, info, category, howtodo
     }
 }

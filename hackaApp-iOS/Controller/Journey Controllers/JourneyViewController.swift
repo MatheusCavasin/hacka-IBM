@@ -13,31 +13,38 @@ class JourneyViewController: UIViewController, UITableViewDelegate, UITableViewD
 
 
     @IBOutlet weak var topicsTableView: UITableView!
-    
+    var questions :[Question] = []{
+        didSet{
+            self.reloadView()
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        journeyRepository.getQuestions()
+        journeyRepository.getQuestions(completion: { questions in
+            self.questions = questions ?? []
+        })
 
         
         topicsTableView.delegate = self
         topicsTableView.dataSource = self
         self.topicsTableView.register(ProblemTableViewCell.nib(), forCellReuseIdentifier: ProblemTableViewCell.identifier)
-        
-        //Observables
-        NotificationCenter.default.addObserver(self, selector: #selector(self.reloadView), name: NSNotification.Name(rawValue: "QuestionsLoaded"), object: nil)
     }
     
     @objc func reloadView() {
-        self.topicsTableView.reloadData()
+        DispatchQueue.main.sync {
+            self.topicsTableView.reloadData()
+        }
     }
-
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return Singleton.shared.questions!.count
-//        Singleton.shared.questions.count
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 98
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -50,19 +57,11 @@ class JourneyViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.cellForRow(at: indexPath)?.isSelected = false //Melhora a navegaçao
+//        self.performSegue(withIdentifier: "toProductJorney", sender: nil)
         if let vc = storyboard?.instantiateViewController(withIdentifier: "ProductJourney") as? ProductJourneyViewController {
-            
-            let controller: ProductJourneyViewController!
-//            let view = UIStoryboard(name: "Journey", bundle: nil)
-//            controller = view.instantiateViewController(identifier: "ProductJourney") as ProductJourneyViewController
-//            controller.index = 2
-//            navigationController?.show(controller, sender: self)
-//
-            if let vc = storyboard?.instantiateViewController(withIdentifier: "ProductJourney") as? ProductJourneyViewController {
-                vc.index = Singleton.shared.questions?[indexPath.row].products?.count
-                self.present(vc, animated:true, completion: {
-                })
-            }
+            vc.products = self.questions[indexPath.row].products ?? []
+            vc.modalPresentationStyle = .fullScreen
+            self.present(vc, animated: false, completion: {})
         }
     }
 

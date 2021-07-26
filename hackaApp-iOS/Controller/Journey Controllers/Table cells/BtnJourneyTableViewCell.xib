@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Nunito-Regular.ttf">
+            <string>Nunito-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="BtnJourneyTableViewCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="BtnJourneyTableViewCell" rowHeight="73" id="KGk-i7-Jjw" customClass="BtnJourneyTableViewCell" customModule="hackaApp_iOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="73"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="73"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7QK-Go-VIF">
+                        <rect key="frame" x="47.5" y="11" width="280" height="51"/>
+                        <color key="backgroundColor" red="0.59215686270000001" green="0.62213009600000002" blue="0.43526345490000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="280" id="rfW-Qg-lzC"/>
+                            <constraint firstAttribute="height" constant="51" id="rhx-X5-VrP"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8UP-7r-hyb">
+                        <rect key="frame" x="47.5" y="11" width="280" height="51"/>
+                        <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="14"/>
+                        <color key="textColor" white="0.96230015889999998" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="8UP-7r-hyb" firstAttribute="leading" secondItem="7QK-Go-VIF" secondAttribute="leading" id="0A9-Q4-CQe"/>
+                    <constraint firstItem="7QK-Go-VIF" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="6Or-7s-0DY"/>
+                    <constraint firstItem="7QK-Go-VIF" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ELO-PY-KYu"/>
+                    <constraint firstItem="8UP-7r-hyb" firstAttribute="bottom" secondItem="7QK-Go-VIF" secondAttribute="bottom" id="e57-Tl-qaA"/>
+                    <constraint firstItem="8UP-7r-hyb" firstAttribute="trailing" secondItem="7QK-Go-VIF" secondAttribute="trailing" id="ghX-cp-obI"/>
+                    <constraint firstItem="8UP-7r-hyb" firstAttribute="top" secondItem="7QK-Go-VIF" secondAttribute="top" id="tiA-2V-h5I"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bgView" destination="H2p-sc-9uM" id="wDO-wY-GCA"/>
+                <outlet property="btnView" destination="7QK-Go-VIF" id="hRT-zu-Lrl"/>
+                <outlet property="titleLabel" destination="8UP-7r-hyb" id="BDI-mU-sUU"/>
+            </connections>
+            <point key="canvasLocation" x="132.60869565217394" y="76.004464285714278"/>
+        </tableViewCell>
+    </objects>
+</document>

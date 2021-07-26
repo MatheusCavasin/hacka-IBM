@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -48,7 +47,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="vfB-g8-KRx" firstAttribute="leading" secondItem="v6Z-y0-H7S" secondAttribute="trailing" constant="20" id="0TX-Ql-Ddb"/>
                             <constraint firstItem="xag-gX-Nxs" firstAttribute="height" secondItem="v6Z-y0-H7S" secondAttribute="height" multiplier="0.733333" id="ABn-8t-kDZ"/>
@@ -65,7 +64,7 @@
                     </view>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="2a7-9D-yby" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="aIO-4G-aSF"/>
+                    <constraint firstItem="2a7-9D-yby" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="wyL-lP-ZAw"/>
                     <constraint firstItem="2a7-9D-yby" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="xFb-Lh-NsM"/>
                 </constraints>
             </tableViewCellContentView>
@@ -76,12 +75,7 @@
                 <outlet property="imgView" destination="v6Z-y0-H7S" id="tz4-C7-x7p"/>
                 <outlet property="tituloLabel" destination="vfB-g8-KRx" id="ojs-V4-ySv"/>
             </connections>
-            <point key="canvasLocation" x="-60.14492753623189" y="118.52678571428571"/>
+            <point key="canvasLocation" x="-60.14492753623189" y="114.50892857142857"/>
         </tableViewCell>
     </objects>
-    <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-    </resources>
 </document>

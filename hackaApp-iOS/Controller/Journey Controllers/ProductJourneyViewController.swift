@@ -12,8 +12,9 @@ class ProductJourneyViewController: UIViewController, UITableViewDelegate, UITab
     
     @IBOutlet weak var productsTableView: UITableView!
     
-    var index: Int! // indice da coluna selecionada
+//    var index: Int! // indice da coluna selecionada
 //    var productsArray: [Product]!
+    var products :[Product] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,20 +22,35 @@ class ProductJourneyViewController: UIViewController, UITableViewDelegate, UITab
         productsTableView.delegate = self
         productsTableView.dataSource = self
         self.productsTableView.register(ProductJourneyTableViewCell.nib(), forCellReuseIdentifier: ProductJourneyTableViewCell.identifier)
-
-        // Do any additional setup after loading the view.
     }
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return index
+        return products.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
         let cell = tableView.dequeueReusableCell(withIdentifier: ProductJourneyTableViewCell.identifier) as! ProductJourneyTableViewCell
-        let productsArray = Singleton.shared.questions?[indexPath.row].products
-        cell.config(imageView: "oleoCozinha", descLabel: productsArray?[indexPath.row].title ?? "")
+        let product = products[indexPath.row]
+        
+//        cell.config(imageView: product.image ?? "", descLabel: product.title ?? "")
+        cell.config(imageView: "oleoCozinha", descLabel: product.title ?? "")
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("ProductJourneyTableViewCell selected: \(indexPath.row)")
+        let product = products[indexPath.row]
+        
+        if let vc = storyboard?.instantiateViewController(identifier: "InstructionsJourney") as? InstructionsJourneyViewController{
+            vc.modalPresentationStyle = .fullScreen
+            if let how = product.howtodo{
+                vc.howtodo = how[0]
+                self.present(vc, animated: false, completion: {})
+            }else{
+                print("ERROR => product without howToDo object")
+            }
+        }
+        
     }
 }
