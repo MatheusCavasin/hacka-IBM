@@ -19,6 +19,7 @@ class SellViewController: UIViewController, UINavigationControllerDelegate, UIIm
     @IBOutlet weak var pickerView: UIPickerView!
     
     
+    
     let categories = ["Plasticos", "Químicos", "Vidros", "Metais", "Tecido", "Madeira", "Eletrônicos", "Borracha"]
     
     var sellRepository = SellRepository()
@@ -54,8 +55,22 @@ class SellViewController: UIViewController, UINavigationControllerDelegate, UIIm
     
     @IBAction func publicarBtn(_ sender: Any) {
         
-//        sellRepository.criarAnuncio()
+        
+        var item = Item(title: titleText.text, amount: amountText.text!, price: 10.0, image: "image-item-1.png", created: "25.07.2021", info: "O mundo esta cheio de anteas que podem ser recicladas", seller: Seller(name: "Gabriela Silva", location: "Curitiba/PR", contact: "99987886"), productId: 8)
+        sellRepository.criarAnuncio(item: item)
+    
+        
+        /*
+        var title :String?
+        var amount :String
+        var price :Float?
+        var image :String?
+        var created :String?
+        var info :String?
+        var seller :Seller?
+        var productId :Int? // Para poder enviar request de criação */
     }
+    
     
     
     @objc func imageTap(tapGestureRecognizer: UITapGestureRecognizer) {
