@@ -13,6 +13,8 @@ class Singleton {
     var apiEndPoint = "https://run.mocky.io/v3/7068b42d-f803-42d6-b8db-bbeeec7b0f92"
     var questions: [Question]? = []
     var storeItems: [StoreItem]? = []
+    var controller: StoreViewController!
     private init() {}
+    
     
 }

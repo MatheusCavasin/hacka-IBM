@@ -20,7 +20,7 @@ class StoreViewController: UIViewController, UITableViewDelegate, UITableViewDat
         super.viewDidLoad()
         
         storeRepository.getStoreItems()
-        
+        Singleton.shared.controller = self
         
         storeTableView.delegate = self
         storeTableView.dataSource = self

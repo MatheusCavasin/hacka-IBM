@@ -41,14 +41,17 @@
                                     <constraint firstAttribute="width" constant="71" id="mtS-GQ-2rO"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="feN-jl-jdZ">
-                                <rect key="frame" x="59" y="155.5" width="71" height="16.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="feN-jl-jdZ">
+                                <rect key="frame" x="59" y="150.5" width="81" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ake-gv-YuK"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AVm-8b-kKH">
-                                <rect key="frame" x="59" y="180" width="71" height="16.5"/>
+                                <rect key="frame" x="59" y="190.5" width="81" height="16.5"/>
                                 <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -58,13 +61,13 @@
                         <constraints>
                             <constraint firstItem="AVm-8b-kKH" firstAttribute="width" secondItem="feN-jl-jdZ" secondAttribute="width" id="Ayw-bo-gv6"/>
                             <constraint firstItem="4rJ-B1-v8K" firstAttribute="width" secondItem="r40-Rb-dCe" secondAttribute="width" multiplier="0.5" id="FRp-Ld-et5"/>
-                            <constraint firstItem="AVm-8b-kKH" firstAttribute="top" secondItem="feN-jl-jdZ" secondAttribute="bottom" constant="8" symbolic="YES" id="Feh-01-WwZ"/>
+                            <constraint firstItem="AVm-8b-kKH" firstAttribute="top" secondItem="feN-jl-jdZ" secondAttribute="bottom" id="Feh-01-WwZ"/>
                             <constraint firstItem="8pJ-IC-gCi" firstAttribute="centerX" secondItem="r40-Rb-dCe" secondAttribute="centerX" id="GG2-r2-uHf"/>
                             <constraint firstItem="8pJ-IC-gCi" firstAttribute="top" secondItem="4rJ-B1-v8K" secondAttribute="bottom" constant="15" id="VUk-Oa-K3e"/>
                             <constraint firstItem="4rJ-B1-v8K" firstAttribute="leading" secondItem="8pJ-IC-gCi" secondAttribute="leading" id="ZKv-f3-6Yy"/>
                             <constraint firstItem="8pJ-IC-gCi" firstAttribute="centerY" secondItem="r40-Rb-dCe" secondAttribute="centerY" id="b6h-tF-pv7"/>
-                            <constraint firstItem="feN-jl-jdZ" firstAttribute="top" secondItem="8pJ-IC-gCi" secondAttribute="bottom" constant="5" id="dHu-Yy-DhB"/>
-                            <constraint firstItem="feN-jl-jdZ" firstAttribute="width" secondItem="8pJ-IC-gCi" secondAttribute="width" id="hFt-68-TDt"/>
+                            <constraint firstItem="feN-jl-jdZ" firstAttribute="top" secondItem="8pJ-IC-gCi" secondAttribute="bottom" id="dHu-Yy-DhB"/>
+                            <constraint firstItem="feN-jl-jdZ" firstAttribute="width" secondItem="8pJ-IC-gCi" secondAttribute="width" constant="10" id="hFt-68-TDt"/>
                             <constraint firstItem="AVm-8b-kKH" firstAttribute="leading" secondItem="feN-jl-jdZ" secondAttribute="leading" id="ii8-om-tXa"/>
                             <constraint firstItem="feN-jl-jdZ" firstAttribute="leading" secondItem="8pJ-IC-gCi" secondAttribute="leading" id="pBg-aK-7nb"/>
                         </constraints>
