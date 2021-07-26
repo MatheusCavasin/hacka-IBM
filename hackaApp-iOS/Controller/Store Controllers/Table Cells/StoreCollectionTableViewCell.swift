@@ -45,6 +45,7 @@ class StoreCollectionTableViewCell: UITableViewCell, UICollectionViewDelegate, U
 
     }
     
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 10
     }
@@ -76,6 +77,37 @@ class StoreCollectionTableViewCell: UITableViewCell, UICollectionViewDelegate, U
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
         print("CELULA CLICADA   \(indexPath.row)")
+        
+        var story = Singleton.shared.controller
+        
+        if let vc =  story?.storyboard?.instantiateViewController(withIdentifier: "SelectedStoreViewController") as? SelectedStoreViewController {
+            
+            let controller: ProductJourneyViewController!
+            if let vc = story?.storyboard?.instantiateViewController(withIdentifier: "SelectedStoreViewController") as? SelectedStoreViewController {
+//                vc.index = Singleton.shared.questions?[indexPath.row].products?.count
+                story?.present(vc, animated:true, completion: {
+                })
+            }
+        }
+        
+        
+        
+//        let selectedStoreViewController: SelectedStoreViewController!
+//        let produtosView = UIStoryboard(name: "Store", bundle: nil)
+//
+//        selectedStoreViewController = produtosView.instantiateViewController(identifier: "SelectedStoreViewController") as? SelectedStoreViewController
+//        Singleton.shared.controller.navigationController?.show(selectedStoreViewController, sender: self)
+        
+//        DispatchQueue.main.async {
+//            NotificationCenter.default.post(name: Notification.Name(rawValue: "CellTapped"), object: nil) // AnucniosCarregados
+//        }
+//
+//        
+//        
+//        let storyBoard: UIStoryboard = UIStoryboard(name: "Store", bundle: nil)
+//        let secondVC = storyBoard.instantiateViewController(withIdentifier: "SelectedStoreViewController")
+//        self.present(secondVC, animated: true, completion: nil)
+        
         
         /*
         if indexPath.row == 0 && fotoInicial{
