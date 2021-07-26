@@ -78,7 +78,7 @@ class StoreCollectionTableViewCell: UITableViewCell, UICollectionViewDelegate, U
         
         print("CELULA CLICADA   \(indexPath.row)")
         
-        var story = Singleton.shared.controller
+        let story = Singleton.shared.controller
         
         if let vc =  story?.storyboard?.instantiateViewController(withIdentifier: "SelectedStoreViewController") as? SelectedStoreViewController {
             

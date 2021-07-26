@@ -46,6 +46,9 @@
 		88F182B426ADEB6F00DAE65C /* StoreRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F182B326ADEB6F00DAE65C /* StoreRepository.swift */; };
 		88F182B626ADF2FB00DAE65C /* InstructionsJourneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F182B526ADF2FA00DAE65C /* InstructionsJourneyViewController.swift */; };
 		88F182B826AE22F100DAE65C /* SelectedStoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F182B726AE22F000DAE65C /* SelectedStoreViewController.swift */; };
+		88F182BA26AE46DD00DAE65C /* SellRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F182B926AE46DD00DAE65C /* SellRepository.swift */; };
+		88F182BD26AE492100DAE65C /* CreateItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F182BC26AE492100DAE65C /* CreateItems.swift */; };
+		88F182BF26AE496700DAE65C /* CreateItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F182BE26AE496700DAE65C /* CreateItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -90,6 +93,9 @@
 		88F182B326ADEB6F00DAE65C /* StoreRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreRepository.swift; sourceTree = "<group>"; };
 		88F182B526ADF2FA00DAE65C /* InstructionsJourneyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionsJourneyViewController.swift; sourceTree = "<group>"; };
 		88F182B726AE22F000DAE65C /* SelectedStoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedStoreViewController.swift; sourceTree = "<group>"; };
+		88F182B926AE46DD00DAE65C /* SellRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellRepository.swift; sourceTree = "<group>"; };
+		88F182BC26AE492100DAE65C /* CreateItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateItems.swift; sourceTree = "<group>"; };
+		88F182BE26AE496700DAE65C /* CreateItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateItem.swift; sourceTree = "<group>"; };
 		D7B6CBE0C9CA10104F514AD5 /* Pods-hackaApp-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hackaApp-iOS.release.xcconfig"; path = "Target Support Files/Pods-hackaApp-iOS/Pods-hackaApp-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		E87369A61E5A29B19D56B6DB /* Pods_hackaApp_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hackaApp_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -167,6 +173,7 @@
 			children = (
 				8890BF4726AC7FAD003BC0D3 /* JourneyRepository.swift */,
 				88F182B326ADEB6F00DAE65C /* StoreRepository.swift */,
+				88F182B926AE46DD00DAE65C /* SellRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -178,6 +185,7 @@
 				885BAA0726ACB9B400A5A63D /* GeneralConfig.swift */,
 				88F182A926ADD86C00DAE65C /* Journey Model */,
 				88F182AA26ADD88500DAE65C /* Store Model */,
+				88F182BB26AE478400DAE65C /* Sell Model */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -280,6 +288,15 @@
 				88F182B126ADDEA700DAE65C /* Seller.swift */,
 			);
 			path = "Store Model";
+			sourceTree = "<group>";
+		};
+		88F182BB26AE478400DAE65C /* Sell Model */ = {
+			isa = PBXGroup;
+			children = (
+				88F182BC26AE492100DAE65C /* CreateItems.swift */,
+				88F182BE26AE496700DAE65C /* CreateItem.swift */,
+			);
+			path = "Sell Model";
 			sourceTree = "<group>";
 		};
 		AF7F646AF9A2DD2BD9D4FF03 /* Pods */ = {
@@ -409,14 +426,17 @@
 				88AC8A3726ACDB84001A4C82 /* ProblemTableViewCell.swift in Sources */,
 				88F182B626ADF2FB00DAE65C /* InstructionsJourneyViewController.swift in Sources */,
 				88F1829626AD8BA800DAE65C /* Question.swift in Sources */,
+				88F182BF26AE496700DAE65C /* CreateItem.swift in Sources */,
 				88F182AE26ADDC7400DAE65C /* StoreItem.swift in Sources */,
 				88F1829426AD212B00DAE65C /* ProductJourneyViewController.swift in Sources */,
 				8890BF2426AC336F003BC0D3 /* ViewController.swift in Sources */,
 				88F182B026ADDE1200DAE65C /* Item.swift in Sources */,
 				88F1829C26AD910300DAE65C /* Questions.swift in Sources */,
 				88F182AC26ADD8F300DAE65C /* StoreItems.swift in Sources */,
+				88F182BA26AE46DD00DAE65C /* SellRepository.swift in Sources */,
 				88F1829E26AD9A3D00DAE65C /* Product.swift in Sources */,
 				88F1829A26AD8DF900DAE65C /* StoreViewController.swift in Sources */,
+				88F182BD26AE492100DAE65C /* CreateItems.swift in Sources */,
 				88F182A726ADD38100DAE65C /* StoreCollectionTableViewCell.swift in Sources */,
 				885BAA0426ACB64A00A5A63D /* SellViewController.swift in Sources */,
 				88F182B826AE22F100DAE65C /* SelectedStoreViewController.swift in Sources */,

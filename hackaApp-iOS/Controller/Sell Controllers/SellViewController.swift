@@ -13,6 +13,23 @@ class SellViewController: UIViewController, UINavigationControllerDelegate, UIIm
     
     @IBOutlet weak var publishButton: UIButton!
     @IBOutlet weak var imgView: UIImageView!
+    @IBOutlet weak var titleText: UITextField!
+    @IBOutlet weak var amountText: UITextField!
+    @IBOutlet weak var priceText: UITextField!
+    @IBOutlet weak var pickerView: UIPickerView!
+    
+    
+    let categories = ["Plasticos", "Químicos", "Vidros", "Metais", "Tecido", "Madeira", "Eletrônicos", "Borracha"]
+    
+    var sellRepository = SellRepository()
+    
+    var numberFormatter: NumberFormatter {
+        let formatter = NumberFormatter()
+        formatter.locale = Locale.current
+        formatter.numberStyle = .currency
+        
+        return formatter
+    }
     
     
     override func viewDidLoad() {
@@ -26,8 +43,20 @@ class SellViewController: UIViewController, UINavigationControllerDelegate, UIIm
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTap(tapGestureRecognizer:)))
         imgView.isUserInteractionEnabled = true
         imgView.addGestureRecognizer(tapGestureRecognizer)
+        
+        pickerView.delegate = self
+        pickerView.dataSource = self
+        
         // Do any additional setup after loading the view.
     }
+    
+    
+    
+    @IBAction func publicarBtn(_ sender: Any) {
+        
+//        sellRepository.criarAnuncio()
+    }
+    
     
     @objc func imageTap(tapGestureRecognizer: UITapGestureRecognizer) {
         
@@ -50,14 +79,24 @@ class SellViewController: UIViewController, UINavigationControllerDelegate, UIIm
         self.imgView.image = image
     }
 
-    /*
-    // MARK: - Navigation
+}
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+extension SellViewController: UIPickerViewDelegate, UIPickerViewDataSource {
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
     }
-    */
-
+    
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return categories.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return categories[row]
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        print(categories[row])
+    }
+    
 }

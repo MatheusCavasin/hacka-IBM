@@ -16,4 +16,5 @@ class Singleton {
     var controller: StoreViewController!
     private init() {}
     
+    
 }
