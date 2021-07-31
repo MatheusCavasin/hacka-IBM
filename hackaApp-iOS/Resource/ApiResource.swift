@@ -10,7 +10,7 @@ import Foundation
 class ApiResource{
     
     
-    static func request(method: String, url: String, params: [String: Any]? = nil, body: [String: Any]? = nil, withAuth: Bool = false,
+    static func request(method: String, url: String, params: [String: Any]? = nil, body: Data? = nil, withAuth: Bool = false,
                      completion: @escaping (Any?, Error?) -> Void){
 
         print("entrou em request")
@@ -51,23 +51,9 @@ class ApiResource{
         }
         
         //Se tiver body para enviar à requisição
-        if body != nil{
-            //Transforma o dicionario em String no formato JSON
-            //var requestBody = body!.map { "\"\($0.0)\":\"\($0.1)\""}.joined(separator: ", ")
-            //requestBody = "{\(requestBody)}"
-            
-            var requestBody: String = ""
-                        
-            if let theJSONData = try? JSONSerialization.data(
-                withJSONObject: body,
-                options: []) {
-                let theJSONText = String(data: theJSONData,
-                                           encoding: .ascii)
-                print("JSON string = \(theJSONText!)")
-                
-                requestBody = theJSONText!
-            }
-            
+        if let bodyJsonData = body{
+            let jsonText = String(data: bodyJsonData, encoding: .ascii)
+            let requestBody :String = jsonText ?? ""
             
             
             //Atribui o corpo à requisição
