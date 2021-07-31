@@ -3,15 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		132A95F3811DF4391222D06E /* Pods_hackaApp_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E87369A61E5A29B19D56B6DB /* Pods_hackaApp_iOS.framework */; };
+		393141DE26B4F68B00C03A58 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 393141DD26B4F68B00C03A58 /* GoogleService-Info.plist */; };
 		393DDBCB26AE0DE900AC7CAE /* InstructionsJorneyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393DDBC926AE0DE900AC7CAE /* InstructionsJorneyTableViewCell.swift */; };
 		393DDBCC26AE0DE900AC7CAE /* InstructionsJorneyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 393DDBCA26AE0DE900AC7CAE /* InstructionsJorneyTableViewCell.xib */; };
 		393DDBCF26AE12C000AC7CAE /* HowToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393DDBCE26AE12C000AC7CAE /* HowToDo.swift */; };
 		393DDBD226AE131D00AC7CAE /* StepToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393DDBD126AE131D00AC7CAE /* StepToDo.swift */; };
+		39853F5726B4F55B004AA3E2 /* ImageResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39853F5626B4F55B004AA3E2 /* ImageResource.swift */; };
 		39B7E1E926AE26C600EE0BA1 /* BtnJourneyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B7E1E726AE26C600EE0BA1 /* BtnJourneyTableViewCell.swift */; };
 		39B7E1EA26AE26C600EE0BA1 /* BtnJourneyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39B7E1E826AE26C600EE0BA1 /* BtnJourneyTableViewCell.xib */; };
 		885BA9F626AC977500A5A63D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885BA9F526AC977500A5A63D /* MainViewController.swift */; };
@@ -58,10 +60,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		393141DD26B4F68B00C03A58 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		393DDBC926AE0DE900AC7CAE /* InstructionsJorneyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionsJorneyTableViewCell.swift; sourceTree = "<group>"; };
 		393DDBCA26AE0DE900AC7CAE /* InstructionsJorneyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InstructionsJorneyTableViewCell.xib; sourceTree = "<group>"; };
 		393DDBCE26AE12C000AC7CAE /* HowToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToDo.swift; sourceTree = "<group>"; };
 		393DDBD126AE131D00AC7CAE /* StepToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepToDo.swift; sourceTree = "<group>"; };
+		39853F5626B4F55B004AA3E2 /* ImageResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageResource.swift; sourceTree = "<group>"; };
 		39B7E1E726AE26C600EE0BA1 /* BtnJourneyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BtnJourneyTableViewCell.swift; sourceTree = "<group>"; };
 		39B7E1E826AE26C600EE0BA1 /* BtnJourneyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BtnJourneyTableViewCell.xib; sourceTree = "<group>"; };
 		73CC0752274F24C339C62D2F /* Pods-hackaApp-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hackaApp-iOS.debug.xcconfig"; path = "Target Support Files/Pods-hackaApp-iOS/Pods-hackaApp-iOS.debug.xcconfig"; sourceTree = "<group>"; };
@@ -175,6 +179,7 @@
 				8890BF2326AC336F003BC0D3 /* ViewController.swift */,
 				8890BF2826AC3373003BC0D3 /* Assets.xcassets */,
 				8890BF2A26AC3373003BC0D3 /* LaunchScreen.storyboard */,
+				393141DD26B4F68B00C03A58 /* GoogleService-Info.plist */,
 				8890BF2D26AC3373003BC0D3 /* Info.plist */,
 			);
 			path = "hackaApp-iOS";
@@ -216,6 +221,7 @@
 		8890BF4226AC7A91003BC0D3 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				39853F5626B4F55B004AA3E2 /* ImageResource.swift */,
 				8890BF4326AC7AAF003BC0D3 /* ApiResource.swift */,
 			);
 			path = Resource;
@@ -345,6 +351,8 @@
 				8890BF1826AC336F003BC0D3 /* Sources */,
 				8890BF1926AC336F003BC0D3 /* Frameworks */,
 				8890BF1A26AC336F003BC0D3 /* Resources */,
+				0160B3544280471FF62C17AA /* [CP] Embed Pods Frameworks */,
+				255CDCB85EBDC64A7ECDFF09 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -394,6 +402,7 @@
 			files = (
 				88AC8A3826ACDB84001A4C82 /* ProblemTableViewCell.xib in Resources */,
 				39B7E1EA26AE26C600EE0BA1 /* BtnJourneyTableViewCell.xib in Resources */,
+				393141DE26B4F68B00C03A58 /* GoogleService-Info.plist in Resources */,
 				8890BF2C26AC3373003BC0D3 /* LaunchScreen.storyboard in Resources */,
 				88F182A426ADB74100DAE65C /* StoreCollectionViewCell.xib in Resources */,
 				88AC8A3D26ACDE4C001A4C82 /* Nunito-Regular.ttf in Resources */,
@@ -412,6 +421,40 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0160B3544280471FF62C17AA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-hackaApp-iOS/Pods-hackaApp-iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-hackaApp-iOS/Pods-hackaApp-iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-hackaApp-iOS/Pods-hackaApp-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		255CDCB85EBDC64A7ECDFF09 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-hackaApp-iOS/Pods-hackaApp-iOS-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-hackaApp-iOS/Pods-hackaApp-iOS-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-hackaApp-iOS/Pods-hackaApp-iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		41C8E1767D4BDC94EABAB49C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -466,6 +509,7 @@
 				8890BF4026AC62C0003BC0D3 /* Singleton.swift in Sources */,
 				88F182A326ADB74100DAE65C /* StoreCollectionViewCell.swift in Sources */,
 				8890BF2026AC336F003BC0D3 /* AppDelegate.swift in Sources */,
+				39853F5726B4F55B004AA3E2 /* ImageResource.swift in Sources */,
 				8890BF4426AC7AAF003BC0D3 /* ApiResource.swift in Sources */,
 				8890BF4826AC7FAD003BC0D3 /* JourneyRepository.swift in Sources */,
 				88F1829126AD20F600DAE65C /* ProductJourneyTableViewCell.swift in Sources */,

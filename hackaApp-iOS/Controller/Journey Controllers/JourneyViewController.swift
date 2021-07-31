@@ -30,6 +30,13 @@ class JourneyViewController: UIViewController, UITableViewDelegate, UITableViewD
         topicsTableView.delegate = self
         topicsTableView.dataSource = self
         self.topicsTableView.register(ProblemTableViewCell.nib(), forCellReuseIdentifier: ProblemTableViewCell.identifier)
+        
+        let objUIImage = UIImage(named: "whatsapp")
+        ImageResource.upload(name: "name-image", image: objUIImage!, completion: { response in
+            if let url = response{
+                //pegar a url e salvar em algum lugar
+            }
+        })
     }
     
     @objc func reloadView() {
