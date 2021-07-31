@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qBt-Le-E3F">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Nunito-Bold.ttf">
+            <string>Nunito-Bold</string>
+        </array>
+        <array key="Nunito-Regular.ttf">
+            <string>Nunito-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Store View Controller-->
+        <scene sceneID="1ki-a4-2bd">
+            <objects>
+                <viewController storyboardIdentifier="TabStore" id="0be-VW-ggw" customClass="StoreViewController" customModule="hackaApp_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Eao-Zy-zBe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qual produto você pode salvar hoje?" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5W-g9-m0A">
+                                <rect key="frame" x="39" y="123" width="336" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="AYA-1h-q9b"/>
+                                    <constraint firstAttribute="width" constant="336" id="JBI-mh-JPV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="25"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="220" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gEg-Li-3Bk">
+                                <rect key="frame" x="0.0" y="253" width="414" height="643"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fH0-nU-8xh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gEg-Li-3Bk" firstAttribute="width" secondItem="Eao-Zy-zBe" secondAttribute="width" id="0LA-Pm-05p"/>
+                            <constraint firstItem="A5W-g9-m0A" firstAttribute="top" secondItem="fH0-nU-8xh" secondAttribute="top" constant="35" id="2Ar-ym-Xdh"/>
+                            <constraint firstItem="A5W-g9-m0A" firstAttribute="leading" secondItem="fH0-nU-8xh" secondAttribute="leading" constant="39" id="5pF-JJ-kQI"/>
+                            <constraint firstItem="A5W-g9-m0A" firstAttribute="centerX" secondItem="fH0-nU-8xh" secondAttribute="centerX" id="CLY-Ps-e0h"/>
+                            <constraint firstAttribute="bottom" secondItem="gEg-Li-3Bk" secondAttribute="bottom" id="iAl-Aj-Q6V"/>
+                            <constraint firstItem="gEg-Li-3Bk" firstAttribute="top" secondItem="A5W-g9-m0A" secondAttribute="bottom" constant="40" id="qOt-0l-kDu"/>
+                            <constraint firstItem="gEg-Li-3Bk" firstAttribute="centerX" secondItem="fH0-nU-8xh" secondAttribute="centerX" id="wf4-sU-tsK"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="wtU-Tx-FxJ"/>
+                    <connections>
+                        <outlet property="storeTableView" destination="gEg-Li-3Bk" id="YPQ-bU-8a8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tha-9g-ALR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4584" y="1270"/>
+        </scene>
+        <!--Selected Store View Controller-->
+        <scene sceneID="iZY-dj-IvU">
+            <objects>
+                <viewController storyboardIdentifier="SelectedStoreViewController" id="47I-0H-vco" customClass="SelectedStoreViewController" customModule="hackaApp_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aFF-YN-385">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="data anúncio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hIY-FH-KZQ">
+                                <rect key="frame" x="60" y="116" width="80.5" height="20"/>
+                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="14"/>
+                                <color key="textColor" systemColor="secondaryLabelColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="24.07.2021" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nB0-Z0-TsH">
+                                <rect key="frame" x="60" y="136" width="80.5" height="20"/>
+                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gabriela SIlva" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0EK-gb-vRq">
+                                <rect key="frame" x="108" y="257.5" width="87.5" height="20"/>
+                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4kg disponíveis" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C9Q-Cy-IKa">
+                                <rect key="frame" x="60" y="582.5" width="242" height="20"/>
+                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R$ 15,00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8dN-d1-2mL">
+                                <rect key="frame" x="60" y="612.5" width="242" height="20"/>
+                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Falar com a vendedora" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gSc-zo-ODs">
+                                <rect key="frame" x="105" y="660" width="142.5" height="20"/>
+                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Curitiba/PR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zdr-Dd-9ut">
+                                <rect key="frame" x="60" y="171" width="75" height="20"/>
+                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Compostagem" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rtO-Wy-LY8">
+                                <rect key="frame" x="60" y="537.5" width="242" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="W3r-Rd-8rp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sellerDefault" translatesAutoresizingMaskIntoConstraints="NO" id="tRt-h9-Rla">
+                                <rect key="frame" x="60" y="251" width="33" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="k2I-pz-oaq"/>
+                                    <constraint firstAttribute="width" constant="33" id="waU-4k-UaD"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Gyb-QR-FtX">
+                                <rect key="frame" x="112" y="337.5" width="190" height="190"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="190" id="lJg-QJ-aYV"/>
+                                    <constraint firstAttribute="width" constant="190" id="ppC-Rx-9Cy"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="whatsApp" translatesAutoresizingMaskIntoConstraints="NO" id="wx9-Zu-oFR">
+                                <rect key="frame" x="60" y="652.5" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="BVl-6m-52V"/>
+                                    <constraint firstAttribute="width" constant="35" id="IKa-Ev-2Wv"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vcE-dE-Wxn">
+                                <rect key="frame" x="42" y="711" width="330" height="130"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Você sabia?" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A1g-30-GjO">
+                                        <rect key="frame" x="28" y="8" width="97" height="25"/>
+                                        <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tC1-dd-l7P">
+                                        <rect key="frame" x="28" y="33" width="271" height="89"/>
+                                        <color key="backgroundColor" red="0.89734250309999997" green="0.89749664070000001" blue="0.89733284710000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="12"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.89734250309999997" green="0.89749664070000001" blue="0.89733284710000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="A1g-30-GjO" firstAttribute="top" secondItem="vcE-dE-Wxn" secondAttribute="top" constant="8" id="EHk-nU-MT3"/>
+                                    <constraint firstAttribute="trailing" secondItem="tC1-dd-l7P" secondAttribute="trailing" constant="31" id="NRu-J5-OT5"/>
+                                    <constraint firstAttribute="height" constant="130" id="OrD-Cx-JYL"/>
+                                    <constraint firstAttribute="bottom" secondItem="tC1-dd-l7P" secondAttribute="bottom" constant="8" id="PXE-of-qsF"/>
+                                    <constraint firstItem="tC1-dd-l7P" firstAttribute="leading" secondItem="A1g-30-GjO" secondAttribute="leading" id="dXf-uk-rP6"/>
+                                    <constraint firstItem="tC1-dd-l7P" firstAttribute="top" secondItem="A1g-30-GjO" secondAttribute="bottom" id="gse-rH-xr0"/>
+                                    <constraint firstItem="A1g-30-GjO" firstAttribute="leading" secondItem="vcE-dE-Wxn" secondAttribute="leading" constant="28" id="msz-j9-mZL"/>
+                                    <constraint firstAttribute="width" constant="330" id="nMf-jm-7GT"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ji0-Mi-Iti"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8dN-d1-2mL" firstAttribute="leading" secondItem="C9Q-Cy-IKa" secondAttribute="leading" id="5G3-1v-95i"/>
+                            <constraint firstItem="rtO-Wy-LY8" firstAttribute="trailing" secondItem="Gyb-QR-FtX" secondAttribute="trailing" id="7nF-zc-x7v"/>
+                            <constraint firstItem="wx9-Zu-oFR" firstAttribute="leading" secondItem="8dN-d1-2mL" secondAttribute="leading" id="8sf-5f-hRs"/>
+                            <constraint firstItem="C9Q-Cy-IKa" firstAttribute="width" secondItem="rtO-Wy-LY8" secondAttribute="width" id="AWf-m6-EYf"/>
+                            <constraint firstItem="C9Q-Cy-IKa" firstAttribute="leading" secondItem="rtO-Wy-LY8" secondAttribute="leading" id="Bre-Bd-ke2"/>
+                            <constraint firstItem="Zdr-Dd-9ut" firstAttribute="top" secondItem="nB0-Z0-TsH" secondAttribute="bottom" constant="15" id="DJ4-zp-IIR"/>
+                            <constraint firstItem="hIY-FH-KZQ" firstAttribute="top" secondItem="Ji0-Mi-Iti" secondAttribute="top" constant="72" id="Gfn-up-jO6"/>
+                            <constraint firstItem="hIY-FH-KZQ" firstAttribute="leading" secondItem="Ji0-Mi-Iti" secondAttribute="leading" constant="60" id="H15-Q1-qrd"/>
+                            <constraint firstItem="Zdr-Dd-9ut" firstAttribute="leading" secondItem="nB0-Z0-TsH" secondAttribute="leading" id="HMr-j7-Ya3"/>
+                            <constraint firstItem="rtO-Wy-LY8" firstAttribute="leading" secondItem="Zdr-Dd-9ut" secondAttribute="leading" id="S5c-gj-DnM"/>
+                            <constraint firstItem="nB0-Z0-TsH" firstAttribute="width" secondItem="hIY-FH-KZQ" secondAttribute="width" id="Sh5-ap-9Ok"/>
+                            <constraint firstItem="vcE-dE-Wxn" firstAttribute="centerX" secondItem="Ji0-Mi-Iti" secondAttribute="centerX" id="Udt-mV-A4t"/>
+                            <constraint firstItem="0EK-gb-vRq" firstAttribute="centerY" secondItem="tRt-h9-Rla" secondAttribute="centerY" id="Y3c-Gd-czS"/>
+                            <constraint firstItem="8dN-d1-2mL" firstAttribute="width" secondItem="C9Q-Cy-IKa" secondAttribute="width" id="YyF-AV-855"/>
+                            <constraint firstItem="nB0-Z0-TsH" firstAttribute="top" secondItem="hIY-FH-KZQ" secondAttribute="bottom" id="bac-3d-Ncu"/>
+                            <constraint firstItem="gSc-zo-ODs" firstAttribute="centerY" secondItem="wx9-Zu-oFR" secondAttribute="centerY" id="d3W-wa-WyP"/>
+                            <constraint firstItem="wx9-Zu-oFR" firstAttribute="top" secondItem="8dN-d1-2mL" secondAttribute="bottom" constant="20" id="dBy-tD-fy8"/>
+                            <constraint firstItem="Gyb-QR-FtX" firstAttribute="top" secondItem="0EK-gb-vRq" secondAttribute="bottom" constant="60" id="fqF-WL-IpG"/>
+                            <constraint firstItem="8dN-d1-2mL" firstAttribute="top" secondItem="C9Q-Cy-IKa" secondAttribute="bottom" constant="10" id="gxU-R0-kKW"/>
+                            <constraint firstItem="vcE-dE-Wxn" firstAttribute="top" secondItem="gSc-zo-ODs" secondAttribute="bottom" constant="31" id="jaa-YU-Rf1"/>
+                            <constraint firstItem="vcE-dE-Wxn" firstAttribute="leading" secondItem="Ji0-Mi-Iti" secondAttribute="leading" constant="42" id="lPh-uv-GOe"/>
+                            <constraint firstItem="tRt-h9-Rla" firstAttribute="leading" secondItem="Zdr-Dd-9ut" secondAttribute="leading" id="mFK-LK-3KI"/>
+                            <constraint firstItem="Gyb-QR-FtX" firstAttribute="centerX" secondItem="Ji0-Mi-Iti" secondAttribute="centerX" id="nzO-XS-iDt"/>
+                            <constraint firstItem="nB0-Z0-TsH" firstAttribute="leading" secondItem="hIY-FH-KZQ" secondAttribute="leading" id="oy3-Vg-Hn3"/>
+                            <constraint firstItem="C9Q-Cy-IKa" firstAttribute="top" secondItem="rtO-Wy-LY8" secondAttribute="bottom" id="p2e-17-lbF"/>
+                            <constraint firstItem="gSc-zo-ODs" firstAttribute="leading" secondItem="wx9-Zu-oFR" secondAttribute="trailing" constant="10" id="sNS-Lf-4u7"/>
+                            <constraint firstItem="rtO-Wy-LY8" firstAttribute="top" secondItem="Gyb-QR-FtX" secondAttribute="bottom" constant="10" id="ydU-m8-YAc"/>
+                            <constraint firstItem="0EK-gb-vRq" firstAttribute="leading" secondItem="tRt-h9-Rla" secondAttribute="trailing" constant="15" id="yvS-M6-ZWF"/>
+                            <constraint firstItem="tRt-h9-Rla" firstAttribute="top" secondItem="Zdr-Dd-9ut" secondAttribute="bottom" constant="60" id="zrB-EC-hnB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="amountProduct" destination="C9Q-Cy-IKa" id="Dr6-9n-oP2"/>
+                        <outlet property="imgProduct" destination="Gyb-QR-FtX" id="BOv-2B-jrI"/>
+                        <outlet property="infoText" destination="tC1-dd-l7P" id="23U-5B-fdx"/>
+                        <outlet property="priceProduct" destination="8dN-d1-2mL" id="6IQ-z9-yor"/>
+                        <outlet property="titleProduct" destination="rtO-Wy-LY8" id="N08-k7-iTP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fEG-gV-s8q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5426" y="1270"/>
+        </scene>
+        <!--Store-->
+        <scene sceneID="KDW-SL-ePB">
+            <objects>
+                <navigationController storyboardIdentifier="UINavigationController-qBt-Le-E3F" automaticallyAdjustsScrollViewInsets="NO" id="qBt-Le-E3F" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Store" image="storeTab" selectedImage="storeTabSelected" id="rV8-EO-CZM"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="aGD-LY-KSU">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="0be-VW-ggw" kind="relationship" relationship="rootViewController" id="N0F-J8-NhF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TK4-An-CdQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3674" y="1270"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="sellerDefault" width="4032" height="6048"/>
+        <image name="storeTab" width="20.5" height="20"/>
+        <image name="storeTabSelected" width="20.5" height="20"/>
+        <image name="whatsApp" width="105" height="105"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

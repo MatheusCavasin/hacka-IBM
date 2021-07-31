@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5i9-et-Ap1">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Nunito-Bold.ttf">
+            <string>Nunito-Bold</string>
+        </array>
+        <array key="Nunito-Regular.ttf">
+            <string>Nunito-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Journey View Controller-->
+        <scene sceneID="BrP-yW-FVs">
+            <objects>
+                <viewController storyboardIdentifier="TabJourney" id="cen-Qg-e8s" customClass="JourneyViewController" customModule="hackaApp_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LQg-Vu-iE2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Como vamos salvar o mundo hoje?" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jYe-BF-IzT">
+                                <rect key="frame" x="102" y="14.5" width="252" height="95"/>
+                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="19"/>
+                                <color key="textColor" red="0.090196078430000007" green="0.2470588235" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="globoHome" translatesAutoresizingMaskIntoConstraints="NO" id="gdw-yz-0yH">
+                                <rect key="frame" x="38" y="35" width="54" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="54" id="5Vc-fD-p0O"/>
+                                    <constraint firstAttribute="height" constant="54" id="zFJ-wX-KnN"/>
+                                </constraints>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="90" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eWn-Xe-h20">
+                                <rect key="frame" x="32" y="184" width="350" height="590"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selecione o que você quer diminuir no meio ambiente hoje:" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Noe-VX-3EF">
+                                <rect key="frame" x="32" y="119" width="350" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="xk2-ym-Wac"/>
+                                    <constraint firstAttribute="width" constant="350" id="z4P-CG-C3W"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="16"/>
+                                <color key="textColor" red="0.090196078430000007" green="0.2470588235" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="qd5-bt-qZ1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Noe-VX-3EF" firstAttribute="centerX" secondItem="qd5-bt-qZ1" secondAttribute="centerX" id="2lm-3J-8YT"/>
+                            <constraint firstItem="gdw-yz-0yH" firstAttribute="leading" secondItem="qd5-bt-qZ1" secondAttribute="leading" constant="38" id="4lA-Nk-XwG"/>
+                            <constraint firstItem="qd5-bt-qZ1" firstAttribute="trailing" secondItem="jYe-BF-IzT" secondAttribute="trailing" constant="60" id="7dd-DD-cml"/>
+                            <constraint firstItem="gdw-yz-0yH" firstAttribute="top" secondItem="qd5-bt-qZ1" secondAttribute="top" constant="35" id="G5B-XV-ZVy"/>
+                            <constraint firstItem="eWn-Xe-h20" firstAttribute="centerX" secondItem="qd5-bt-qZ1" secondAttribute="centerX" id="Onn-6C-3ZH"/>
+                            <constraint firstItem="qd5-bt-qZ1" firstAttribute="bottom" secondItem="eWn-Xe-h20" secondAttribute="bottom" id="XgT-ns-dv8"/>
+                            <constraint firstItem="Noe-VX-3EF" firstAttribute="top" secondItem="gdw-yz-0yH" secondAttribute="bottom" constant="30" id="dvP-g9-ukI"/>
+                            <constraint firstItem="jYe-BF-IzT" firstAttribute="leading" secondItem="gdw-yz-0yH" secondAttribute="trailing" constant="10" id="h0q-Te-OhI"/>
+                            <constraint firstItem="eWn-Xe-h20" firstAttribute="top" secondItem="Noe-VX-3EF" secondAttribute="bottom" constant="20" id="jD0-OZ-VGN"/>
+                            <constraint firstItem="eWn-Xe-h20" firstAttribute="width" secondItem="Noe-VX-3EF" secondAttribute="width" id="kef-j0-eFq"/>
+                            <constraint firstItem="jYe-BF-IzT" firstAttribute="centerY" secondItem="gdw-yz-0yH" secondAttribute="centerY" id="kfK-nw-Zg0"/>
+                            <constraint firstItem="jYe-BF-IzT" firstAttribute="height" secondItem="gdw-yz-0yH" secondAttribute="height" multiplier="1.75926" id="tbV-Hd-vWc"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="gSj-RP-wJA"/>
+                    <connections>
+                        <outlet property="topicsTableView" destination="eWn-Xe-h20" id="P5P-TJ-FBT"/>
+                        <segue destination="2hh-v4-KJM" kind="show" identifier="toProductJourney" id="C69-w1-8kH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dz6-2H-epi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4557.971014492754" y="-208.25892857142856"/>
+        </scene>
+        <!--Product Journey View Controller-->
+        <scene sceneID="gIp-Zc-6Fx">
+            <objects>
+                <viewController restorationIdentifier="ProductJourney" storyboardIdentifier="ProductJourney" id="2hh-v4-KJM" customClass="ProductJourneyViewController" customModule="hackaApp_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uMo-kU-1XO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qual produto você pode salvar hoje?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oMm-94-ge9">
+                                <rect key="frame" x="38" y="35" width="338" height="68.5"/>
+                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="25"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DBm-0H-W3m">
+                                <rect key="frame" x="32" y="203.5" width="350" height="570.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selecione o tipo de produto que deseja vender" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VL2-vB-dpy">
+                                <rect key="frame" x="38" y="113.5" width="338" height="49.5"/>
+                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="18"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="E4o-Cj-BKb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="DBm-0H-W3m" firstAttribute="centerX" secondItem="E4o-Cj-BKb" secondAttribute="centerX" id="5ny-3d-I7U"/>
+                            <constraint firstItem="DBm-0H-W3m" firstAttribute="width" secondItem="oMm-94-ge9" secondAttribute="width" multiplier="1.0355" id="OKy-M3-yBr"/>
+                            <constraint firstItem="VL2-vB-dpy" firstAttribute="top" secondItem="oMm-94-ge9" secondAttribute="bottom" constant="10" id="Qxu-S5-2ki"/>
+                            <constraint firstItem="oMm-94-ge9" firstAttribute="centerX" secondItem="E4o-Cj-BKb" secondAttribute="centerX" id="Wtk-oE-4gc"/>
+                            <constraint firstItem="VL2-vB-dpy" firstAttribute="leading" secondItem="oMm-94-ge9" secondAttribute="leading" id="ZyQ-zx-SSU"/>
+                            <constraint firstItem="oMm-94-ge9" firstAttribute="leading" secondItem="E4o-Cj-BKb" secondAttribute="leading" constant="38" id="c6O-OT-HGX"/>
+                            <constraint firstItem="VL2-vB-dpy" firstAttribute="trailing" secondItem="oMm-94-ge9" secondAttribute="trailing" id="opW-Hj-Zb6"/>
+                            <constraint firstItem="E4o-Cj-BKb" firstAttribute="bottom" secondItem="DBm-0H-W3m" secondAttribute="bottom" id="pM8-eD-r6g"/>
+                            <constraint firstItem="DBm-0H-W3m" firstAttribute="top" secondItem="VL2-vB-dpy" secondAttribute="bottom" constant="40.5" id="sDy-TZ-ZtD"/>
+                            <constraint firstItem="oMm-94-ge9" firstAttribute="top" secondItem="E4o-Cj-BKb" secondAttribute="top" constant="35" id="um5-fx-HW3"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="oTJ-1i-67S"/>
+                    <connections>
+                        <outlet property="productsTableView" destination="DBm-0H-W3m" id="RF6-KF-qbT"/>
+                        <segue destination="xCl-GI-5n1" kind="show" identifier="toInstructionsJourney" id="Ky0-OR-Uuc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b1W-dz-YQ1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5426.0869565217399" y="-208.25892857142856"/>
+        </scene>
+        <!--Journey-->
+        <scene sceneID="OYA-Zs-Yek">
+            <objects>
+                <navigationController storyboardIdentifier="UINavigationController-5i9-et-Ap1" automaticallyAdjustsScrollViewInsets="NO" id="5i9-et-Ap1" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Journey" image="journeyTab" selectedImage="journeyTabSelected" id="37Q-aP-goW"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="gi4-kA-HC1">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="cen-Qg-e8s" kind="relationship" relationship="rootViewController" id="A58-pO-2QV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MQK-bU-67S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3675" y="-208"/>
+        </scene>
+        <!--Instructions Journey View Controller-->
+        <scene sceneID="s7Y-h5-Ema">
+            <objects>
+                <viewController storyboardIdentifier="InstructionsJourney" id="xCl-GI-5n1" customClass="InstructionsJourneyViewController" customModule="hackaApp_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="V0b-bf-hPn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qual produto você pode salvar hoje?" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="itf-Qe-JoU">
+                                <rect key="frame" x="38" y="35" width="338" height="68.5"/>
+                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="25"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cBb-KK-6Id">
+                                <rect key="frame" x="32" y="203.5" width="350" height="570.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selecione o tipo de produto que deseja vender" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AR0-cH-ePn">
+                                <rect key="frame" x="38" y="113.5" width="338" height="49.5"/>
+                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="18"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="JQC-qZ-ihS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="itf-Qe-JoU" firstAttribute="leading" secondItem="JQC-qZ-ihS" secondAttribute="leading" constant="38" id="0zZ-Mq-CA7"/>
+                            <constraint firstItem="AR0-cH-ePn" firstAttribute="trailing" secondItem="itf-Qe-JoU" secondAttribute="trailing" id="3GC-mJ-dQx"/>
+                            <constraint firstItem="cBb-KK-6Id" firstAttribute="top" secondItem="AR0-cH-ePn" secondAttribute="bottom" constant="40.5" id="4O6-dt-5bQ"/>
+                            <constraint firstItem="cBb-KK-6Id" firstAttribute="centerX" secondItem="JQC-qZ-ihS" secondAttribute="centerX" id="HI6-Kx-yDQ"/>
+                            <constraint firstItem="JQC-qZ-ihS" firstAttribute="bottom" secondItem="cBb-KK-6Id" secondAttribute="bottom" id="Hl1-Kg-RpE"/>
+                            <constraint firstItem="AR0-cH-ePn" firstAttribute="leading" secondItem="itf-Qe-JoU" secondAttribute="leading" id="SbQ-df-pG3"/>
+                            <constraint firstItem="cBb-KK-6Id" firstAttribute="width" secondItem="itf-Qe-JoU" secondAttribute="width" multiplier="1.0355" id="WN7-jq-5WD"/>
+                            <constraint firstItem="itf-Qe-JoU" firstAttribute="centerX" secondItem="JQC-qZ-ihS" secondAttribute="centerX" id="fFd-ek-oCH"/>
+                            <constraint firstItem="itf-Qe-JoU" firstAttribute="top" secondItem="JQC-qZ-ihS" secondAttribute="top" constant="35" id="uYz-9Y-QvD"/>
+                            <constraint firstItem="AR0-cH-ePn" firstAttribute="top" secondItem="itf-Qe-JoU" secondAttribute="bottom" constant="10" id="zQ8-fy-ikG"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="UAA-Cb-XDE"/>
+                    <connections>
+                        <outlet property="instructionSubtitle" destination="AR0-cH-ePn" id="ChL-oD-XnO"/>
+                        <outlet property="instructionTableView" destination="cBb-KK-6Id" id="5Fw-WR-Asl"/>
+                        <outlet property="instructionTitle" destination="itf-Qe-JoU" id="Jdu-G4-t41"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lpd-gn-152" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6366.666666666667" y="-208.25892857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="globoHome" width="162" height="162"/>
+        <image name="journeyTab" width="20" height="20"/>
+        <image name="journeyTabSelected" width="20" height="20"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

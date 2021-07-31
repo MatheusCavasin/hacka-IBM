@@ -18,8 +18,17 @@
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>LSApplicationCategoryType</key>
+	<string></string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>The app would like to have acess to your camera</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Nunito-Regular.ttf</string>
+		<string>Nunito-Bold.ttf</string>
+	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -39,8 +48,6 @@
 			</array>
 		</dict>
 	</dict>
-	<key>LSApplicationCategoryType</key>
-	<string></string>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
 	<key>UILaunchStoryboardName</key>
@@ -63,13 +70,6 @@
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
-	</array>
-	<key>NSCameraUsageDescription</key>
-	<string>The app would like to have acess to your camera</string>
-	<key>UIAppFonts</key>
-	<array>
-		<string>Nunito-Regular.ttf</string>
-		<string>Nunito-Bold.ttf</string>
 	</array>
 </dict>
 </plist>

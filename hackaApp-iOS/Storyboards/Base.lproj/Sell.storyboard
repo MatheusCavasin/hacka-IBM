@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rxO-Ff-MTH">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sell View Controller-->
+        <scene sceneID="NNk-ca-Ua0">
+            <objects>
+                <viewController storyboardIdentifier="TabSell" id="Rf6-o2-bMg" customClass="SellViewController" customModule="hackaApp_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="a7K-ej-3e9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="N6x-Lk-dOI">
+                                <rect key="frame" x="112.5" y="123" width="189" height="189"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="189" id="6uz-hh-oqo"/>
+                                    <constraint firstAttribute="width" constant="189" id="XSZ-hM-2SR"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Título anúncio" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Iga-QZ-pl0">
+                                <rect key="frame" x="40" y="372" width="119" height="34"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Quantidade" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Dj-ht-dKK">
+                                <rect key="frame" x="40" y="437" width="90" height="34"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="II9-Pf-1OZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Preço" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hxy-3j-sPP">
+                                <rect key="frame" x="40" y="502" width="90" height="34"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="DAk-Wg-n8E"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JVe-sP-IP9">
+                                <rect key="frame" x="80" y="656" width="254" height="46"/>
+                                <color key="backgroundColor" red="0.31182864310000002" green="0.31188797950000002" blue="0.3118248582" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="CaR-pj-SLg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Publicar"/>
+                                <connections>
+                                    <action selector="publicarBtn:" destination="Rf6-o2-bMg" eventType="touchUpInside" id="AL3-Lb-vyr"/>
+                                </connections>
+                            </button>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Sy-nJ-wbk">
+                                <rect key="frame" x="0.0" y="536" width="414" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="KR2-AU-37q"/>
+                                </constraints>
+                            </pickerView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5xG-tP-k59"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Iga-QZ-pl0" firstAttribute="leading" secondItem="5xG-tP-k59" secondAttribute="leading" constant="40" id="6mq-yv-wB5"/>
+                            <constraint firstItem="hxy-3j-sPP" firstAttribute="leading" secondItem="2Dj-ht-dKK" secondAttribute="leading" id="9Ti-yp-FIG"/>
+                            <constraint firstItem="N6x-Lk-dOI" firstAttribute="top" secondItem="5xG-tP-k59" secondAttribute="top" constant="35" id="9z6-Fk-jsC"/>
+                            <constraint firstItem="2Dj-ht-dKK" firstAttribute="leading" secondItem="Iga-QZ-pl0" secondAttribute="leading" id="CxK-9G-NAN"/>
+                            <constraint firstItem="JVe-sP-IP9" firstAttribute="centerX" secondItem="2Sy-nJ-wbk" secondAttribute="centerX" id="Lfh-sZ-wGw"/>
+                            <constraint firstItem="2Sy-nJ-wbk" firstAttribute="top" secondItem="hxy-3j-sPP" secondAttribute="bottom" id="MCp-bD-l4Q"/>
+                            <constraint firstItem="2Sy-nJ-wbk" firstAttribute="centerX" secondItem="5xG-tP-k59" secondAttribute="centerX" id="N3h-zP-xyt"/>
+                            <constraint firstItem="JVe-sP-IP9" firstAttribute="top" secondItem="2Sy-nJ-wbk" secondAttribute="bottom" constant="20" id="Q63-NP-u1i"/>
+                            <constraint firstItem="JVe-sP-IP9" firstAttribute="leading" secondItem="5xG-tP-k59" secondAttribute="leading" constant="80" id="WMF-sD-vyV"/>
+                            <constraint firstItem="hxy-3j-sPP" firstAttribute="top" secondItem="2Dj-ht-dKK" secondAttribute="bottom" constant="31" id="lUX-K5-55P"/>
+                            <constraint firstItem="2Dj-ht-dKK" firstAttribute="top" secondItem="Iga-QZ-pl0" secondAttribute="bottom" constant="31" id="sDA-pw-yDL"/>
+                            <constraint firstItem="2Sy-nJ-wbk" firstAttribute="width" secondItem="a7K-ej-3e9" secondAttribute="width" id="sM4-AB-5sZ"/>
+                            <constraint firstItem="N6x-Lk-dOI" firstAttribute="centerX" secondItem="5xG-tP-k59" secondAttribute="centerX" id="tfJ-sc-lA0"/>
+                            <constraint firstItem="Iga-QZ-pl0" firstAttribute="top" secondItem="N6x-Lk-dOI" secondAttribute="bottom" constant="60" id="wYY-BC-wX1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="6xl-Wm-9IC"/>
+                    <connections>
+                        <outlet property="amountText" destination="2Dj-ht-dKK" id="UQR-ac-V0S"/>
+                        <outlet property="imgView" destination="N6x-Lk-dOI" id="Cl5-r6-pFR"/>
+                        <outlet property="pickerView" destination="2Sy-nJ-wbk" id="2ep-c5-Juj"/>
+                        <outlet property="priceText" destination="hxy-3j-sPP" id="Es2-o8-ba9"/>
+                        <outlet property="publishButton" destination="JVe-sP-IP9" id="eBd-bP-n36"/>
+                        <outlet property="titleText" destination="Iga-QZ-pl0" id="5iH-Qq-4N3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MMe-ws-mg2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5426" y="594"/>
+        </scene>
+        <!--Sell-->
+        <scene sceneID="lkR-PP-TDP">
+            <objects>
+                <navigationController storyboardIdentifier="UINavigationController-rxO-Ff-MTH" automaticallyAdjustsScrollViewInsets="NO" id="rxO-Ff-MTH" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Sell" image="sellTab" selectedImage="sellTabSelected" id="mtj-ae-Fxm"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="y3d-RM-yNg">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Rf6-o2-bMg" kind="relationship" relationship="rootViewController" id="ick-Fa-J3w"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uyn-jK-1Pd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4516" y="594"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="sellTab" width="20" height="20.5"/>
+        <image name="sellTabSelected" width="20" height="20"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
