@@ -7,15 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		132A95F3811DF4391222D06E /* Pods_hackaApp_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E87369A61E5A29B19D56B6DB /* Pods_hackaApp_iOS.framework */; };
 		393141DE26B4F68B00C03A58 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 393141DD26B4F68B00C03A58 /* GoogleService-Info.plist */; };
 		393DDBCB26AE0DE900AC7CAE /* InstructionsJorneyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393DDBC926AE0DE900AC7CAE /* InstructionsJorneyTableViewCell.swift */; };
 		393DDBCC26AE0DE900AC7CAE /* InstructionsJorneyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 393DDBCA26AE0DE900AC7CAE /* InstructionsJorneyTableViewCell.xib */; };
 		393DDBCF26AE12C000AC7CAE /* HowToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393DDBCE26AE12C000AC7CAE /* HowToDo.swift */; };
 		393DDBD226AE131D00AC7CAE /* StepToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393DDBD126AE131D00AC7CAE /* StepToDo.swift */; };
 		39853F5726B4F55B004AA3E2 /* ImageResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39853F5626B4F55B004AA3E2 /* ImageResource.swift */; };
+		39B0923D26B59C7300F33164 /* Store.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39B0923B26B59C7300F33164 /* Store.storyboard */; };
 		39B7E1E926AE26C600EE0BA1 /* BtnJourneyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B7E1E726AE26C600EE0BA1 /* BtnJourneyTableViewCell.swift */; };
 		39B7E1EA26AE26C600EE0BA1 /* BtnJourneyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39B7E1E826AE26C600EE0BA1 /* BtnJourneyTableViewCell.xib */; };
+		39C88AE526B5A0580021B645 /* Sell.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39C88AE326B5A0580021B645 /* Sell.storyboard */; };
+		39C88AE926B5A0B80021B645 /* Journey.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39C88AE726B5A0B80021B645 /* Journey.storyboard */; };
 		885BA9F626AC977500A5A63D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885BA9F526AC977500A5A63D /* MainViewController.swift */; };
 		885BAA0426ACB64A00A5A63D /* SellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885BAA0326ACB64A00A5A63D /* SellViewController.swift */; };
 		885BAA0826ACB9B400A5A63D /* GeneralConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885BAA0726ACB9B400A5A63D /* GeneralConfig.swift */; };
@@ -54,18 +56,22 @@
 		88F182BA26AE46DD00DAE65C /* SellRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F182B926AE46DD00DAE65C /* SellRepository.swift */; };
 		88F182BD26AE492100DAE65C /* CreateItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F182BC26AE492100DAE65C /* CreateItems.swift */; };
 		88F182BF26AE496700DAE65C /* CreateItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F182BE26AE496700DAE65C /* CreateItem.swift */; };
+		92BA77CF8404F73BA8A90F0D /* Pods_hackaApp_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDFDE071E0B6B58D319DAB55 /* Pods_hackaApp_iOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		29C600295D4875222E28A28C /* Pods-hackaApp-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hackaApp-iOS.release.xcconfig"; path = "Target Support Files/Pods-hackaApp-iOS/Pods-hackaApp-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		393141DD26B4F68B00C03A58 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		393DDBC926AE0DE900AC7CAE /* InstructionsJorneyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionsJorneyTableViewCell.swift; sourceTree = "<group>"; };
 		393DDBCA26AE0DE900AC7CAE /* InstructionsJorneyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InstructionsJorneyTableViewCell.xib; sourceTree = "<group>"; };
 		393DDBCE26AE12C000AC7CAE /* HowToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToDo.swift; sourceTree = "<group>"; };
 		393DDBD126AE131D00AC7CAE /* StepToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepToDo.swift; sourceTree = "<group>"; };
 		39853F5626B4F55B004AA3E2 /* ImageResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageResource.swift; sourceTree = "<group>"; };
+		39B0923C26B59C7300F33164 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Store.storyboard; sourceTree = "<group>"; };
 		39B7E1E726AE26C600EE0BA1 /* BtnJourneyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BtnJourneyTableViewCell.swift; sourceTree = "<group>"; };
 		39B7E1E826AE26C600EE0BA1 /* BtnJourneyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BtnJourneyTableViewCell.xib; sourceTree = "<group>"; };
-		73CC0752274F24C339C62D2F /* Pods-hackaApp-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hackaApp-iOS.debug.xcconfig"; path = "Target Support Files/Pods-hackaApp-iOS/Pods-hackaApp-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		39C88AE426B5A0580021B645 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Sell.storyboard; sourceTree = "<group>"; };
+		39C88AE826B5A0B80021B645 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Journey.storyboard; sourceTree = "<group>"; };
 		885BA9F526AC977500A5A63D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		885BAA0326ACB64A00A5A63D /* SellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellViewController.swift; sourceTree = "<group>"; };
 		885BAA0726ACB9B400A5A63D /* GeneralConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralConfig.swift; sourceTree = "<group>"; };
@@ -106,8 +112,8 @@
 		88F182B926AE46DD00DAE65C /* SellRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellRepository.swift; sourceTree = "<group>"; };
 		88F182BC26AE492100DAE65C /* CreateItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateItems.swift; sourceTree = "<group>"; };
 		88F182BE26AE496700DAE65C /* CreateItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateItem.swift; sourceTree = "<group>"; };
-		D7B6CBE0C9CA10104F514AD5 /* Pods-hackaApp-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hackaApp-iOS.release.xcconfig"; path = "Target Support Files/Pods-hackaApp-iOS/Pods-hackaApp-iOS.release.xcconfig"; sourceTree = "<group>"; };
-		E87369A61E5A29B19D56B6DB /* Pods_hackaApp_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hackaApp_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBC8596CF11E22577ECC03A1 /* Pods-hackaApp-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hackaApp-iOS.debug.xcconfig"; path = "Target Support Files/Pods-hackaApp-iOS/Pods-hackaApp-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		EDFDE071E0B6B58D319DAB55 /* Pods_hackaApp_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hackaApp_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,7 +121,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				132A95F3811DF4391222D06E /* Pods_hackaApp_iOS.framework in Frameworks */,
+				92BA77CF8404F73BA8A90F0D /* Pods_hackaApp_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,8 +153,8 @@
 				8890BF1E26AC336F003BC0D3 /* hackaApp-iOS */,
 				8890BF1D26AC336F003BC0D3 /* Products */,
 				AF7F646AF9A2DD2BD9D4FF03 /* Pods */,
-				F4751C37D7360BB51164D094 /* Frameworks */,
 				88AC8A3A26ACDE1B001A4C82 /* Fonts */,
+				C9DF0E32DD74B0ECDEBD44FE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -205,6 +211,9 @@
 			isa = PBXGroup;
 			children = (
 				8890BF2526AC336F003BC0D3 /* Main.storyboard */,
+				39C88AE726B5A0B80021B645 /* Journey.storyboard */,
+				39B0923B26B59C7300F33164 /* Store.storyboard */,
+				39C88AE326B5A0580021B645 /* Sell.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -317,16 +326,16 @@
 		AF7F646AF9A2DD2BD9D4FF03 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				73CC0752274F24C339C62D2F /* Pods-hackaApp-iOS.debug.xcconfig */,
-				D7B6CBE0C9CA10104F514AD5 /* Pods-hackaApp-iOS.release.xcconfig */,
+				BBC8596CF11E22577ECC03A1 /* Pods-hackaApp-iOS.debug.xcconfig */,
+				29C600295D4875222E28A28C /* Pods-hackaApp-iOS.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		F4751C37D7360BB51164D094 /* Frameworks */ = {
+		C9DF0E32DD74B0ECDEBD44FE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E87369A61E5A29B19D56B6DB /* Pods_hackaApp_iOS.framework */,
+				EDFDE071E0B6B58D319DAB55 /* Pods_hackaApp_iOS.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -338,12 +347,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8890BF3026AC3373003BC0D3 /* Build configuration list for PBXNativeTarget "hackaApp-iOS" */;
 			buildPhases = (
-				41C8E1767D4BDC94EABAB49C /* [CP] Check Pods Manifest.lock */,
+				68CD6123C32EA0C6182BD21B /* [CP] Check Pods Manifest.lock */,
 				8890BF1826AC336F003BC0D3 /* Sources */,
 				8890BF1926AC336F003BC0D3 /* Frameworks */,
 				8890BF1A26AC336F003BC0D3 /* Resources */,
-				0160B3544280471FF62C17AA /* [CP] Embed Pods Frameworks */,
-				255CDCB85EBDC64A7ECDFF09 /* [CP] Copy Pods Resources */,
+				BFED531F133569A1429D5F4C /* [CP] Embed Pods Frameworks */,
+				09D9595B7A84B93A096CB09F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -400,8 +409,11 @@
 				88F1829226AD20F600DAE65C /* ProductJourneyTableViewCell.xib in Resources */,
 				88AC8A3E26ACDE4C001A4C82 /* Nunito-Bold.ttf in Resources */,
 				8890BF2926AC3373003BC0D3 /* Assets.xcassets in Resources */,
+				39B0923D26B59C7300F33164 /* Store.storyboard in Resources */,
 				8890BF2726AC336F003BC0D3 /* Main.storyboard in Resources */,
 				88F182A826ADD38100DAE65C /* StoreCollectionTableViewCell.xib in Resources */,
+				39C88AE526B5A0580021B645 /* Sell.storyboard in Resources */,
+				39C88AE926B5A0B80021B645 /* Journey.storyboard in Resources */,
 				393DDBCC26AE0DE900AC7CAE /* InstructionsJorneyTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,24 +421,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0160B3544280471FF62C17AA /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-hackaApp-iOS/Pods-hackaApp-iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-hackaApp-iOS/Pods-hackaApp-iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-hackaApp-iOS/Pods-hackaApp-iOS-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		255CDCB85EBDC64A7ECDFF09 /* [CP] Copy Pods Resources */ = {
+		09D9595B7A84B93A096CB09F /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -443,7 +438,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-hackaApp-iOS/Pods-hackaApp-iOS-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		41C8E1767D4BDC94EABAB49C /* [CP] Check Pods Manifest.lock */ = {
+		68CD6123C32EA0C6182BD21B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -463,6 +458,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BFED531F133569A1429D5F4C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-hackaApp-iOS/Pods-hackaApp-iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-hackaApp-iOS/Pods-hackaApp-iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-hackaApp-iOS/Pods-hackaApp-iOS-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -512,6 +524,30 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		39B0923B26B59C7300F33164 /* Store.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				39B0923C26B59C7300F33164 /* Base */,
+			);
+			name = Store.storyboard;
+			sourceTree = "<group>";
+		};
+		39C88AE326B5A0580021B645 /* Sell.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				39C88AE426B5A0580021B645 /* Base */,
+			);
+			name = Sell.storyboard;
+			sourceTree = "<group>";
+		};
+		39C88AE726B5A0B80021B645 /* Journey.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				39C88AE826B5A0B80021B645 /* Base */,
+			);
+			name = Journey.storyboard;
+			sourceTree = "<group>";
+		};
 		8890BF2526AC336F003BC0D3 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -649,19 +685,21 @@
 		};
 		8890BF3126AC3373003BC0D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 73CC0752274F24C339C62D2F /* Pods-hackaApp-iOS.debug.xcconfig */;
+			baseConfigurationReference = BBC8596CF11E22577ECC03A1 /* Pods-hackaApp-iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8GN6S9CHL7;
+				DEVELOPMENT_TEAM = GUL3CPS6RX;
 				INFOPLIST_FILE = "hackaApp-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "br.com.hackaApp-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.hackaApp-iOS2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -669,19 +707,21 @@
 		};
 		8890BF3226AC3373003BC0D3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D7B6CBE0C9CA10104F514AD5 /* Pods-hackaApp-iOS.release.xcconfig */;
+			baseConfigurationReference = 29C600295D4875222E28A28C /* Pods-hackaApp-iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8GN6S9CHL7;
+				DEVELOPMENT_TEAM = GUL3CPS6RX;
 				INFOPLIST_FILE = "hackaApp-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "br.com.hackaApp-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.hackaApp-iOS2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
