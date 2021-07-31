@@ -18,7 +18,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="RU3-sm-TTt">
-                        <rect key="frame" x="0.0" y="11" width="490" height="165"/>
+                        <rect key="frame" x="0.0" y="61" width="490" height="126"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="eqo-q1-O43">
                             <size key="itemSize" width="128" height="128"/>
@@ -27,16 +27,26 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                     </collectionView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YZR-Fr-6wI">
+                        <rect key="frame" x="20" y="30" width="450" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="RU3-sm-TTt" secondAttribute="trailing" id="Dlk-Gb-9Q5"/>
-                    <constraint firstAttribute="bottom" secondItem="RU3-sm-TTt" secondAttribute="bottom" constant="11" id="G0W-nz-ROI"/>
-                    <constraint firstItem="RU3-sm-TTt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Iwb-it-9W8"/>
-                    <constraint firstItem="RU3-sm-TTt" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="Kfo-CL-S8T"/>
+                    <constraint firstItem="YZR-Fr-6wI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="30" id="5VE-7h-5F8"/>
+                    <constraint firstAttribute="trailing" secondItem="YZR-Fr-6wI" secondAttribute="trailing" constant="20" id="8Xl-4I-1FR"/>
+                    <constraint firstItem="RU3-sm-TTt" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="FnZ-Vm-kZ7"/>
+                    <constraint firstAttribute="bottom" secondItem="RU3-sm-TTt" secondAttribute="bottom" id="G0W-nz-ROI"/>
+                    <constraint firstItem="YZR-Fr-6wI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="PI9-zU-Uwr"/>
+                    <constraint firstItem="RU3-sm-TTt" firstAttribute="top" secondItem="YZR-Fr-6wI" secondAttribute="bottom" constant="10" id="h38-pR-KWP"/>
+                    <constraint firstItem="RU3-sm-TTt" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" id="lPF-Ep-bK4"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="categoryLabel" destination="YZR-Fr-6wI" id="NXD-Ym-Ato"/>
                 <outlet property="collectionView" destination="RU3-sm-TTt" id="h0s-MS-xLo"/>
             </connections>
             <point key="canvasLocation" x="244.92753623188409" y="96.763392857142847"/>
