@@ -14,7 +14,7 @@ class ImageResource{
     
     static func upload(name :String, image: UIImage, completion : @escaping ( _ url: URL?)-> ()){
 
-        let storageRef = Storage.storage().reference().child("name")
+        let storageRef = Storage.storage().reference().child(name)
         let imageData = image.jpegData(compressionQuality: 0.1)
         let metaData = StorageMetadata()
         metaData.contentType = "image/jpeg"
