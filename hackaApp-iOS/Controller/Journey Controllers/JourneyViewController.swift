@@ -64,11 +64,13 @@ class JourneyViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.cellForRow(at: indexPath)?.isSelected = false //Melhora a navegaçao
-//        self.performSegue(withIdentifier: "toProductJorney", sender: nil)
-        if let vc = storyboard?.instantiateViewController(withIdentifier: "ProductJourney") as? ProductJourneyViewController {
-            vc.products = self.questions[indexPath.row].products ?? []
-            vc.modalPresentationStyle = .fullScreen
-            self.present(vc, animated: false, completion: {})
+        self.performSegue(withIdentifier: "toProductJourney", sender: indexPath.row)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toProductJourney"{
+            let vc = segue.destination as! ProductJourneyViewController
+            vc.products = self.questions[sender as? Int ?? 0].products ?? []
         }
     }
 

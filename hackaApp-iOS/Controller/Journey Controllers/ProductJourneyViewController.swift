@@ -11,9 +11,6 @@ class ProductJourneyViewController: UIViewController, UITableViewDelegate, UITab
 
     
     @IBOutlet weak var productsTableView: UITableView!
-    
-//    var index: Int! // indice da coluna selecionada
-//    var productsArray: [Product]!
     var products :[Product] = []
     
     override func viewDidLoad() {
@@ -32,25 +29,23 @@ class ProductJourneyViewController: UIViewController, UITableViewDelegate, UITab
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: ProductJourneyTableViewCell.identifier) as! ProductJourneyTableViewCell
         let product = products[indexPath.row]
-        
-//        cell.config(imageView: product.image ?? "", descLabel: product.title ?? "")
         cell.config(imageView: "oleoCozinha", descLabel: product.title ?? "")
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("ProductJourneyTableViewCell selected: \(indexPath.row)")
-        let product = products[indexPath.row]
-        
-        if let vc = storyboard?.instantiateViewController(identifier: "InstructionsJourney") as? InstructionsJourneyViewController{
-            vc.modalPresentationStyle = .fullScreen
+        tableView.cellForRow(at: indexPath)?.isSelected = false
+        self.performSegue(withIdentifier: "toInstructionsJourney", sender: indexPath.row)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toInstructionsJourney"{
+            let vc = segue.destination as! InstructionsJourneyViewController
+            
+            let product = products[sender as? Int ?? 0]
             if let how = product.howtodo{
                 vc.howtodo = how[0]
-                self.present(vc, animated: false, completion: {})
-            }else{
-                print("ERROR => product without howToDo object")
             }
         }
-        
     }
 }

@@ -17,7 +17,6 @@
 		39B7E1E926AE26C600EE0BA1 /* BtnJourneyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B7E1E726AE26C600EE0BA1 /* BtnJourneyTableViewCell.swift */; };
 		39B7E1EA26AE26C600EE0BA1 /* BtnJourneyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39B7E1E826AE26C600EE0BA1 /* BtnJourneyTableViewCell.xib */; };
 		885BA9F626AC977500A5A63D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885BA9F526AC977500A5A63D /* MainViewController.swift */; };
-		885BA9FA26AC980D00A5A63D /* Journey.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 885BA9F926AC980D00A5A63D /* Journey.storyboard */; };
 		885BAA0026AC989000A5A63D /* Sell.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 885BA9FF26AC989000A5A63D /* Sell.storyboard */; };
 		885BAA0426ACB64A00A5A63D /* SellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885BAA0326ACB64A00A5A63D /* SellViewController.swift */; };
 		885BAA0826ACB9B400A5A63D /* GeneralConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885BAA0726ACB9B400A5A63D /* GeneralConfig.swift */; };
@@ -70,7 +69,6 @@
 		39B7E1E826AE26C600EE0BA1 /* BtnJourneyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BtnJourneyTableViewCell.xib; sourceTree = "<group>"; };
 		73CC0752274F24C339C62D2F /* Pods-hackaApp-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hackaApp-iOS.debug.xcconfig"; path = "Target Support Files/Pods-hackaApp-iOS/Pods-hackaApp-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		885BA9F526AC977500A5A63D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		885BA9F926AC980D00A5A63D /* Journey.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Journey.storyboard; sourceTree = "<group>"; };
 		885BA9FF26AC989000A5A63D /* Sell.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Sell.storyboard; sourceTree = "<group>"; };
 		885BAA0326ACB64A00A5A63D /* SellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellViewController.swift; sourceTree = "<group>"; };
 		885BAA0726ACB9B400A5A63D /* GeneralConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralConfig.swift; sourceTree = "<group>"; };
@@ -211,7 +209,6 @@
 			isa = PBXGroup;
 			children = (
 				8890BF2526AC336F003BC0D3 /* Main.storyboard */,
-				885BA9F926AC980D00A5A63D /* Journey.storyboard */,
 				885BA9FF26AC989000A5A63D /* Sell.storyboard */,
 				88F1829726AD8DB800DAE65C /* Store.storyboard */,
 			);
@@ -406,7 +403,6 @@
 				8890BF2C26AC3373003BC0D3 /* LaunchScreen.storyboard in Resources */,
 				88F182A426ADB74100DAE65C /* StoreCollectionViewCell.xib in Resources */,
 				88AC8A3D26ACDE4C001A4C82 /* Nunito-Regular.ttf in Resources */,
-				885BA9FA26AC980D00A5A63D /* Journey.storyboard in Resources */,
 				88F1829226AD20F600DAE65C /* ProductJourneyTableViewCell.xib in Resources */,
 				88AC8A3E26ACDE4C001A4C82 /* Nunito-Bold.ttf in Resources */,
 				885BAA0026AC989000A5A63D /* Sell.storyboard in Resources */,
