@@ -27,6 +27,15 @@ class StoreCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
     }
     
+    func config(categoryLabel: String, iten: Item) {
+        
+        self.imgView.image = UIImage(named: iten.image ?? "")
+        self.imgView.layer.cornerRadius = CGFloat(20.0)
+        self.nameLabel.text = iten.title ?? ""
+        self.priceLabel.text = String(iten.price ?? 0.0)
+    }
+    
+    /*
     func config(categoryLabel: String, activeLabel: Bool, imageView: String, nameLabel: String, priceLabel: Float) {
                 
         if activeLabel {
@@ -39,10 +48,8 @@ class StoreCollectionViewCell: UICollectionViewCell {
         self.imgView.layer.cornerRadius = CGFloat(20.0)
         self.nameLabel.text = nameLabel
         self.priceLabel.text = String(priceLabel)
-        
-        
-        
-        
     }
+ 
+ */
 
 }
