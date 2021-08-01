@@ -11,7 +11,8 @@ class JourneyViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     let journeyRepository = JourneyRepository()
 
-
+    @IBOutlet weak var loadPicker: UIActivityIndicatorView!
+    
     @IBOutlet weak var topicsTableView: UITableView!
     var questions :[Question] = []{
         didSet{
@@ -21,7 +22,7 @@ class JourneyViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        loadPicker.startAnimating()
         journeyRepository.getQuestions(completion: { questions in
             self.questions = questions ?? []
         })
@@ -41,6 +42,8 @@ class JourneyViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     @objc func reloadView() {
         DispatchQueue.main.sync {
+            loadPicker.stopAnimating()
+            loadPicker.isHidden = true
             self.topicsTableView.reloadData()
         }
     }

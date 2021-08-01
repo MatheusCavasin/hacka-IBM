@@ -11,6 +11,7 @@ class StoreViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     
     
+    @IBOutlet weak var loadPicker: UIActivityIndicatorView!
     @IBOutlet weak var storeTableView: UITableView!
     
     
@@ -18,7 +19,7 @@ class StoreViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        loadPicker.startAnimating()
         storeRepository.getStoreItems()
         Singleton.shared.controller = self
         
@@ -30,8 +31,17 @@ class StoreViewController: UIViewController, UITableViewDelegate, UITableViewDat
         NotificationCenter.default.addObserver(self, selector: #selector(self.reloadView), name: NSNotification.Name(rawValue: "StoreItemsLoaded"), object: nil)
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        print("AQUIIII \n\n\n\n\n\n\n\n")
+        storeRepository.getStoreItems()
+
+    }
+    
+    
     @objc func reloadView() {
         self.storeTableView.reloadData()
+        loadPicker.stopAnimating()
+        loadPicker.isHidden = true
     }
     
     

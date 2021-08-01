@@ -18,6 +18,8 @@
 		39B7E1EA26AE26C600EE0BA1 /* BtnJourneyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39B7E1E826AE26C600EE0BA1 /* BtnJourneyTableViewCell.xib */; };
 		39C88AE526B5A0580021B645 /* Sell.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39C88AE326B5A0580021B645 /* Sell.storyboard */; };
 		39C88AE926B5A0B80021B645 /* Journey.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39C88AE726B5A0B80021B645 /* Journey.storyboard */; };
+		8854F43226B6183F00262DC0 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8854F43126B6183D00262DC0 /* CreateAccountViewController.swift */; };
+		8854F43426B6185300262DC0 /* NewUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8854F43326B6185300262DC0 /* NewUserViewController.swift */; };
 		885BA9F626AC977500A5A63D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885BA9F526AC977500A5A63D /* MainViewController.swift */; };
 		885BAA0426ACB64A00A5A63D /* SellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885BAA0326ACB64A00A5A63D /* SellViewController.swift */; };
 		885BAA0826ACB9B400A5A63D /* GeneralConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885BAA0726ACB9B400A5A63D /* GeneralConfig.swift */; };
@@ -72,6 +74,8 @@
 		39B7E1E826AE26C600EE0BA1 /* BtnJourneyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BtnJourneyTableViewCell.xib; sourceTree = "<group>"; };
 		39C88AE426B5A0580021B645 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Sell.storyboard; sourceTree = "<group>"; };
 		39C88AE826B5A0B80021B645 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Journey.storyboard; sourceTree = "<group>"; };
+		8854F43126B6183D00262DC0 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		8854F43326B6185300262DC0 /* NewUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewUserViewController.swift; sourceTree = "<group>"; };
 		885BA9F526AC977500A5A63D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		885BAA0326ACB64A00A5A63D /* SellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellViewController.swift; sourceTree = "<group>"; };
 		885BAA0726ACB9B400A5A63D /* GeneralConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralConfig.swift; sourceTree = "<group>"; };
@@ -143,6 +147,8 @@
 			isa = PBXGroup;
 			children = (
 				885BAA0326ACB64A00A5A63D /* SellViewController.swift */,
+				8854F43126B6183D00262DC0 /* CreateAccountViewController.swift */,
+				8854F43326B6185300262DC0 /* NewUserViewController.swift */,
 			);
 			path = "Sell Controllers";
 			sourceTree = "<group>";
@@ -484,6 +490,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8854F43226B6183F00262DC0 /* CreateAccountViewController.swift in Sources */,
 				88F182B226ADDEA700DAE65C /* Seller.swift in Sources */,
 				885BA9F626AC977500A5A63D /* MainViewController.swift in Sources */,
 				88AC8A3726ACDB84001A4C82 /* ProblemTableViewCell.swift in Sources */,
@@ -517,6 +524,7 @@
 				8890BF2226AC336F003BC0D3 /* SceneDelegate.swift in Sources */,
 				88F182B426ADEB6F00DAE65C /* StoreRepository.swift in Sources */,
 				88AC8A3226ACD7CB001A4C82 /* JourneyViewController.swift in Sources */,
+				8854F43426B6185300262DC0 /* NewUserViewController.swift in Sources */,
 				885BAA0826ACB9B400A5A63D /* GeneralConfig.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -691,13 +699,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GUL3CPS6RX;
+				DEVELOPMENT_TEAM = 8GN6S9CHL7;
 				INFOPLIST_FILE = "hackaApp-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "br.com.hackaApp-iOS2";
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.hackaApp-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -713,13 +721,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GUL3CPS6RX;
+				DEVELOPMENT_TEAM = 8GN6S9CHL7;
 				INFOPLIST_FILE = "hackaApp-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "br.com.hackaApp-iOS2";
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.hackaApp-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;

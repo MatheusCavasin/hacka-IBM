@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class SellViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
 
@@ -20,7 +21,7 @@ class SellViewController: UIViewController, UINavigationControllerDelegate, UIIm
     
     
     
-    let categories = ["Plasticos", "Químicos", "Vidros", "Metais", "Tecido", "Madeira", "Eletrônicos", "Borracha"]
+    let categories = ["Plastics", "Chemicals", "Glass", "Metals", "Fabrics", "Woods", "Electronics"]
     
     var sellRepository = SellRepository()
     
@@ -48,27 +49,73 @@ class SellViewController: UIViewController, UINavigationControllerDelegate, UIIm
         pickerView.delegate = self
         pickerView.dataSource = self
         
+        if UserDefaults.standard.string(forKey: "User") == nil {
+            self.publishButton.layer.backgroundColor = #colorLiteral(red: 0.768627451, green: 0.768627451, blue: 0.768627451, alpha: 1)
+        } else {
+            self.publishButton.layer.backgroundColor = #colorLiteral(red: 0.5843137255, green: 0.6235294118, blue: 0.4117647059, alpha: 1)
+        }
+        
         // Do any additional setup after loading the view.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        
+        clearData()
+        
+        
+    }
     
+    func clearData() {
+        self.imgView.image = UIImage(named: "imgDefault")
+        self.titleText.text = ""
+        self.amountText.text = ""
+        self.priceText.text = ""
+    }
     
     @IBAction func publicarBtn(_ sender: Any) {
         
         
-        var item = Item(title: titleText.text, amount: amountText.text!, price: 10.0, image: "image-item-1.png", created: "25.07.2021", info: "O mundo esta cheio de anteas que podem ser recicladas", seller: Seller(name: "Gabriela Silva", location: "Curitiba/PR", contact: "99987886"), productId: 8)
-        sellRepository.criarAnuncio(item: item)
-    
+        if UserDefaults.standard.string(forKey: "User") == nil {
+            
+            if let vc = storyboard?.instantiateViewController(identifier: "NewUserViewController") as? NewUserViewController {
+                self.present(vc, animated: true, completion: {})
+            }
+        }
+        else {
+            var idProduct = pickerView.selectedRow(inComponent: 0)
+            
+            switch idProduct {
+            case 0:
+                idProduct = 2
+            case 1:
+                idProduct = 15
+            case 2:
+                idProduct = 40
+            case 3:
+                idProduct = 52
+            case 4:
+                idProduct = 70
+            case 5:
+                idProduct = 77
+            default:
+                idProduct = 93
+            }
+            
+            print(pickerView.selectedRow(inComponent: 0))
+            
+            
+            let item = Item(title: titleText.text, amount: amountText.text!, price: NumberFormatter().number(from: priceText.text ?? "0.0")!.floatValue, image: "", created: "", info: "", seller: Seller(name: UserDefaults.standard.string(forKey: "User"), location: UserDefaults.standard.string(forKey: "Address")!, contact: UserDefaults.standard.string(forKey: "Phone")!), productId: idProduct)
+            sellRepository.criarAnuncio(item: item, imageItem: imgView.image!)
+            print(item)
+            clearData()
+            
+        }
         
-        /*
-        var title :String?
-        var amount :String
-        var price :Float?
-        var image :String?
-        var created :String?
-        var info :String?
-        var seller :Seller?
-        var productId :Int? // Para poder enviar request de criação */
+        
+        //        var item = Item(title: "TESTE123", amount: "100", price: 10.0, image: "globoHome", created: "25.07.2021", info: "O mundo esta cheio de anteas que podem ser recicladas", seller: Seller(name: "Gabriela Silva", location: "Curitiba/PR", contact: "99987886"), productId: 2)
+        //        sellRepository.criarAnuncio(item: item, imageItem: UIImage(named: "globoHome")!)
+        //
+        
     }
     
     
@@ -84,14 +131,17 @@ class SellViewController: UIViewController, UINavigationControllerDelegate, UIIm
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        picker.dismiss(animated: true)
+        
 
         guard let image = info[.editedImage] as? UIImage else {
             print("No image found")
             return
         }
         
-        self.imgView.image = image
+        
+        picker.dismiss(animated: true, completion: {
+            self.imgView.image = image
+        })
     }
 
 }

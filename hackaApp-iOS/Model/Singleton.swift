@@ -14,6 +14,7 @@ class Singleton {
     var questions: [Question]? = []
     var storeItems: [StoreItem]? = []
     var controller: StoreViewController!
+    var urlIMagem: String = ""
     private init() {}
     
     

@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rxO-Ff-MTH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rxO-Ff-MTH">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Nunito-Bold.ttf">
+            <string>Nunito-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Sell View Controller-->
         <scene sceneID="NNk-ca-Ua0">
@@ -23,22 +28,22 @@
                                     <constraint firstAttribute="width" constant="189" id="XSZ-hM-2SR"/>
                                 </constraints>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Título anúncio" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Iga-QZ-pl0">
-                                <rect key="frame" x="40" y="372" width="119" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Announcement title" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Iga-QZ-pl0">
+                                <rect key="frame" x="40" y="372" width="154.5" height="34"/>
                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Quantidade" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Dj-ht-dKK">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Amount" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Dj-ht-dKK">
                                 <rect key="frame" x="40" y="437" width="90" height="34"/>
                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="90" id="II9-Pf-1OZ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Preço" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hxy-3j-sPP">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Price" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hxy-3j-sPP">
                                 <rect key="frame" x="40" y="502" width="90" height="34"/>
                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
                                 <constraints>
@@ -99,6 +104,82 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MMe-ws-mg2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5426" y="594"/>
+        </scene>
+        <!--New User View Controller-->
+        <scene sceneID="UPB-2X-DMZ">
+            <objects>
+                <viewController storyboardIdentifier="NewUserViewController" id="GqL-5N-bmZ" customClass="NewUserViewController" customModule="hackaApp_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="C23-dd-YLp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create your account and come to be sustainable with us :)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F6D-E0-rmc">
+                                <rect key="frame" x="46" y="116" width="322" height="35.5"/>
+                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vMs-lP-cno">
+                                <rect key="frame" x="85" y="279" width="244" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eW7-Vy-xBp">
+                                <rect key="frame" x="85" y="341" width="244" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your full name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qQU-QL-c4p">
+                                <rect key="frame" x="85" y="217" width="244" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mSL-6X-kXj">
+                                <rect key="frame" x="67" y="449" width="280" height="50"/>
+                                <color key="backgroundColor" red="0.58431372549019611" green="0.62352941176470589" blue="0.41176470588235292" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="5ul-2c-64a"/>
+                                    <constraint firstAttribute="height" constant="50" id="cAz-av-C1K"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="15"/>
+                                <state key="normal" title="Create account">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="createButton:" destination="GqL-5N-bmZ" eventType="touchUpInside" id="c7V-Ic-D51"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="MXg-4H-aXf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eW7-Vy-xBp" firstAttribute="width" secondItem="vMs-lP-cno" secondAttribute="width" id="4Di-k3-94V"/>
+                            <constraint firstItem="mSL-6X-kXj" firstAttribute="centerX" secondItem="MXg-4H-aXf" secondAttribute="centerX" id="7Ht-Oc-RGj"/>
+                            <constraint firstItem="mSL-6X-kXj" firstAttribute="top" secondItem="eW7-Vy-xBp" secondAttribute="bottom" constant="74" id="Dg0-pu-RnI"/>
+                            <constraint firstItem="vMs-lP-cno" firstAttribute="width" secondItem="qQU-QL-c4p" secondAttribute="width" id="Drc-cP-h1g"/>
+                            <constraint firstItem="MXg-4H-aXf" firstAttribute="trailing" secondItem="F6D-E0-rmc" secondAttribute="trailing" constant="46" id="EHN-Ir-2gB"/>
+                            <constraint firstItem="eW7-Vy-xBp" firstAttribute="top" secondItem="vMs-lP-cno" secondAttribute="bottom" constant="28" id="Ed6-6S-Wph"/>
+                            <constraint firstItem="F6D-E0-rmc" firstAttribute="top" secondItem="MXg-4H-aXf" secondAttribute="top" constant="72" id="Fw6-JC-4Xb"/>
+                            <constraint firstItem="MXg-4H-aXf" firstAttribute="trailing" secondItem="qQU-QL-c4p" secondAttribute="trailing" constant="85" id="LYo-f9-B5p"/>
+                            <constraint firstItem="qQU-QL-c4p" firstAttribute="leading" secondItem="MXg-4H-aXf" secondAttribute="leading" constant="85" id="M3Y-Kj-zF4"/>
+                            <constraint firstItem="F6D-E0-rmc" firstAttribute="leading" secondItem="MXg-4H-aXf" secondAttribute="leading" constant="46" id="Qon-3t-E8a"/>
+                            <constraint firstItem="vMs-lP-cno" firstAttribute="centerX" secondItem="qQU-QL-c4p" secondAttribute="centerX" id="UHs-IA-kBF"/>
+                            <constraint firstItem="vMs-lP-cno" firstAttribute="top" secondItem="qQU-QL-c4p" secondAttribute="bottom" constant="28" id="Z0b-JB-dKu"/>
+                            <constraint firstItem="qQU-QL-c4p" firstAttribute="top" secondItem="F6D-E0-rmc" secondAttribute="bottom" constant="65.5" id="bba-Ca-1GR"/>
+                            <constraint firstItem="eW7-Vy-xBp" firstAttribute="centerX" secondItem="vMs-lP-cno" secondAttribute="centerX" id="f7s-xU-NzO"/>
+                            <constraint firstItem="F6D-E0-rmc" firstAttribute="centerX" secondItem="MXg-4H-aXf" secondAttribute="centerX" id="gkl-hS-WtN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addressTextField" destination="vMs-lP-cno" id="TvR-RJ-EYJ"/>
+                        <outlet property="createButton" destination="mSL-6X-kXj" id="rx4-Q7-KRf"/>
+                        <outlet property="nameTextField" destination="qQU-QL-c4p" id="4NH-Dl-kZx"/>
+                        <outlet property="phoneTextField" destination="eW7-Vy-xBp" id="NAe-h4-kSv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sny-m0-nB9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6282.608695652174" y="593.97321428571422"/>
         </scene>
         <!--Sell-->
         <scene sceneID="lkR-PP-TDP">

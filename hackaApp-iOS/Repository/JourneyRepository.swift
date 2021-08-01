@@ -9,7 +9,8 @@ import Foundation
 
 class JourneyRepository {
     
-    let endpoint = "https://hacka-ibm-team-24.herokuapp.com/api/v1/question"
+//    let endpoint = "https://hacka-ibm-team-24.herokuapp.com/api/v1/question"
+    let endpoint = "https://820b2565.us-south.apigw.appdomain.cloud/ibm-gateway/api/v1/question"
     
     func getQuestions(completion: @escaping ([Question]?) -> Void) {
         ApiResource.request(method: "GET", url: endpoint) { (result, err) in
