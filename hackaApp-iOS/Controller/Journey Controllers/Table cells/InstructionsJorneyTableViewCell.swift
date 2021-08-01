@@ -30,6 +30,7 @@ class InstructionsJorneyTableViewCell: UITableViewCell {
     }
     
     func config(descriptionLabel :String, index :Int){
+        self.descriptionLabel.text = descriptionLabel
         self.baseView.layer.borderWidth = 1.0
         self.baseView.layer.cornerRadius = 18.0
         if(index % 2 == 0){
